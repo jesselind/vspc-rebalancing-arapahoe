@@ -33,15 +33,14 @@ The system:
 - Python 3.7+
 - Required packages: `pandas`, `numpy`
 
-### Running the Latest Version
+### Running the Current Version
 
 ```bash
-# Generate v14 assignments (current development version)
-cd v14
-python generate_v14_ripple_rebalanced.py
+# Generate current assignments
+python generate_assignments.py
 ```
 
-This will create:
+This will create output files in the `output/` directory:
 - `VSPC - Precinct Distribution.csv` - One row per precinct (403 rows)
 - `VSPC Locations.csv` - One row per VSPC (32 rows)
 - `Summary Statistics.csv` - Overall statistics
@@ -60,27 +59,45 @@ The system uses master files as the source of truth:
 
 ```
 CEI/
-├── README.md                          # This file
+├── README.md                          # This file (project overview)
 ├── VSPC_REBALANCING_CONTEXT.md       # Detailed technical documentation
+│
+├── generate_assignments.py           # CURRENT: Main script to generate assignments
 ├── master_precincts.csv              # Master precinct data (source of truth)
-├── master_vspcs.csv                   # Master VSPC data (source of truth)
-├── v14/                               # Current development version
-│   ├── generate_v14_ripple_rebalanced.py
-│   └── [output CSV files]
-├── v13/                               # Previous stable version
-├── v11/                               # Previous version with GIS tools
-├── gis/                               # GIS data and QGIS setup guide
-└── [other version directories]
+├── master_vspcs.csv                  # Master VSPC data (source of truth)
+│
+├── output/                            # CURRENT: Output files (CSV results)
+│   ├── VSPC - Precinct Distribution.csv
+│   ├── VSPC Locations.csv
+│   └── Summary Statistics.csv
+│
+├── gis/                               # CURRENT: GIS tools and data
+│   ├── assign_vspc_colors.py         # Assign colors to VSPCs
+│   ├── assign_precinct_colors.py     # Assign colors to precincts
+│   ├── vspc_locations_colored.geojson
+│   ├── precinct_locations_colored.geojson
+│   ├── QGIS_SETUP_GUIDE.md
+│   └── README.md
+│
+├── scripts/                           # Utility scripts
+│   ├── geocode_vspcs.py
+│   └── geocode_high_precision.py
+│
+└── Archived Resources/                # Historical versions (v1-v14) and outdated files
+    ├── v1/ ... v14/                   # HISTORICAL: Previous versions (for reference)
+    └── [other archived files]
 ```
+
+**Note:** This repository is now version-controlled. Historical versions (v1-v14) are preserved in `Archived Resources/` for reference. Current work uses version-agnostic files in the root directory. Use git history to track changes over time.
 
 ## Current Status
 
-**Latest Version: v14** (development)
+**Current Algorithm**: Ripple/cascade rebalancing (voter volume focused)
 
 - **Total Precincts**: 403
 - **Total VSPCs**: 32
-- **Algorithm**: Ripple/cascade rebalancing (voter volume focused)
 - **Target**: ~13,000 voters per VSPC (±25% tolerance)
+- **Algorithm**: Based on v14 (see version history in `VSPC_REBALANCING_CONTEXT.md`)
 
 See `VSPC_REBALANCING_CONTEXT.md` for detailed statistics and version history.
 
@@ -88,7 +105,7 @@ See `VSPC_REBALANCING_CONTEXT.md` for detailed statistics and version history.
 
 ### The Rebalancing Algorithm
 
-The current algorithm (v14, based on v11 ripple/cascade):
+The current algorithm (based on v14, which evolved from v11 ripple/cascade):
 
 1. **Geographic Baseline**: Calculates nearest VSPC for each precinct
 2. **Identify Overloads**: Finds VSPCs with voter counts above target + 25%
@@ -145,14 +162,16 @@ The project includes GIS tools for mapping:
 
 ## Version History
 
-The project has evolved through multiple versions:
+The project has evolved through multiple versions (v1-v14), all preserved in `Archived Resources/v1/` through `Archived Resources/v14/` for reference:
 
 - **v1-v5**: Initial implementations and refinements
 - **v6**: Voter-volume-based rebalancing (64% std dev improvement)
 - **v8**: Added 6 new VSPCs, geographic constraint enforcement
 - **v10-v11**: Ripple/cascade algorithm, master file system
 - **v13**: Stable version with GIS color assignments
-- **v14**: Current development version (algorithm improvements)
+- **v14**: Final versioned iteration (algorithm improvements)
+
+**Current state**: The codebase is now version-agnostic. The main script (`generate_assignments.py`) is based on v14's algorithm. Use git history to track changes going forward.
 
 See `VSPC_REBALANCING_CONTEXT.md` for detailed version history and results.
 
@@ -160,17 +179,20 @@ See `VSPC_REBALANCING_CONTEXT.md` for detailed version history and results.
 
 When making changes:
 
-1. Work in the appropriate version directory (currently `v14/`)
-2. Keep master files (`master_precincts.csv`, `master_vspcs.csv`) unchanged
-3. Document algorithm changes in `VSPC_REBALANCING_CONTEXT.md`
-4. Test with current voter registration data
+1. **Edit the main script**: `generate_assignments.py` (version-agnostic)
+2. **Keep master files unchanged**: `master_precincts.csv`, `master_vspcs.csv` are the source of truth
+3. **Document changes**: Update `VSPC_REBALANCING_CONTEXT.md` with algorithm changes
+4. **Test with current data**: Use the latest voter registration file
+5. **Use git**: Commit changes with descriptive messages - version history is tracked in git
+
+**Historical versions** (v1-v14) are preserved in `Archived Resources/` for reference. The current codebase is version-agnostic and uses git for version control.
 
 ## Documentation
 
 - **`README.md`** (this file) - Project overview and quick start
 - **`VSPC_REBALANCING_CONTEXT.md`** - Detailed technical documentation, algorithm details, version history
 - **`gis/QGIS_SETUP_GUIDE.md`** - GIS visualization setup instructions
-- Version-specific READMEs in each version directory
+- Version-specific READMEs in `Archived Resources/vX/` directories
 
 ## License
 

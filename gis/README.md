@@ -1,121 +1,96 @@
-# GIS Data Export
+# GIS Data and Tools
 
-This directory contains GeoJSON files exported for use in QGIS for visualizing VSPC and precinct distributions.
+This directory contains the **current** GIS tools and data for visualizing VSPC and precinct distributions in QGIS.
 
-## Version History
+## Current Tools
 
-The color assignment system has been versioned:
+### Color Assignment Scripts
 
-- **V11** (backup in `../v11/gis/`): RGB-based color distance with explicit color families
-  - Used strict color distance thresholds (250.0/300.0)
-  - Family separation: 15 miles minimum
-  - Result: 18 remaining conflicts
+- **`assign_vspc_colors.py`** - Assigns colors to VSPCs based on geographic proximity
+  - Uses hardcoded color assignments (from v13) with manual override support
+  - Ensures adjacent VSPCs use different color families
+  - Generates `vspc_locations_colored.geojson` and `vspc_color_mapping.json`
+  - Automatically runs `assign_precinct_colors.py` after VSPC colors are assigned
 
-- **V12** (backup in `../v12/gis/`): HSL-based palette selection
-  - Uses hue-evenly-distributed colors from [Quackit HSL Color Chart](https://www.quackit.com/css/color/charts/hsl_color_chart.cfm)
-  - 32 colors evenly spaced around color wheel (~11.25° increments)
-  - Maximizes perceptual separation before applying geographic constraints
-  - **Issue**: Manual overrides triggered full recalculation
+- **`assign_precinct_colors.py`** - Assigns colors to precincts based on their assigned VSPC
+  - Reads VSPC colors from `vspc_color_mapping.json`
+  - Reads precinct assignments from `output/VSPC - Precinct Distribution.csv`
+  - Generates `precinct_locations_colored.geojson` with colors matching assigned VSPCs
 
-- **V13** (active in `../v13/gis/`): Hardcoded color assignments with automatic precinct coloring
-  - All 32 VSPC colors are hardcoded from V12 final output
-  - Manual overrides can be added without triggering recalculation
-  - Perfect for incremental manual adjustments
-  - **Solution**: Stable colors, no whack-a-mole problem
-  - **New**: Precinct colors automatically match their assigned VSPC colors
+### Usage
 
-The current active color assignment scripts are in `v13/gis/`. The `v12/gis/` and `v11/gis/` directories contain backups for reference.
-
-## Files
-
-### `vspc_locations.geojson`
-- **Description**: All VSPC (Voter Service Polling Center) locations
-- **Features**: 32 VSPC points
-- **Properties**:
-  - `name`: VSPC name
-  - `address`, `city`, `state`, `zip`: Full address
-  - `latitude`, `longitude`: Coordinates
-
-### `precinct_locations.geojson`
-- **Description**: All precinct locations
-- **Features**: 403 precinct points
-- **Properties**:
-  - `precinct`: Precinct number
-  - `precinct_str`: Precinct as string
-  - `voter_count_2022`: Voter count from 2022
-  - `voter_count_current`: Current voter count
-  - `us_cong`, `co_sen`, `co_hse`, `arap`, `comm`: District information
-  - `latitude`, `longitude`: Coordinates
-  - `hyperlink`: Link to precinct map PDF
-
-### V13 Colored Files (in `v13/gis/`)
-- **`vspc_locations_colored.geojson`**: VSPC locations with assigned colors
-  - All VSPC location properties
-  - `color`, `color_hex`: Assigned color for each VSPC
-  
-- **`precinct_locations_colored.geojson`**: Precinct locations with colors matching assigned VSPC
-  - All precinct location properties
-  - `assigned_vspc`: VSPC assigned to this precinct
-  - `color`, `color_hex`: Color matching the assigned VSPC
-  - `voters`, `nearest_vspc`, `distance_to_assigned_mi`, `reassigned`: Assignment data
-
-### `v11_precinct_assignments.geojson`
-- **Location**: `v11/gis/v11_precinct_assignments.geojson` (moved to v11 directory)
-- **Description**: Precinct locations with v11 assignment data
-- **Features**: 403 precinct points with assignment information
-- **Properties**:
-  - All precinct location properties
-  - `assigned_vspc`: VSPC assigned in v11
-  - `nearest_vspc`: Geographically nearest VSPC
-  - `distance_to_nearest_mi`: Distance to nearest VSPC
-  - `distance_to_assigned_mi`: Distance to assigned VSPC
-  - `distance_difference_mi`: Difference between assigned and nearest
-  - `reassigned`: Whether precinct was reassigned from nearest
-  - `voters`: Voter count for this precinct
-  - `voters_assigned`, `precincts_assigned`: Totals for assigned VSPC
-  - `vspc_address`, `vspc_city`, `vspc_state`, `vspc_zip`: Assigned VSPC address
-  - `vspc_latitude`, `vspc_longitude`: Assigned VSPC coordinates
-
-## Usage in QGIS
-
-1. **Open QGIS**
-2. **Add Vector Layer**: Layer > Add Layer > Add Vector Layer
-3. **Select GeoJSON files**: Browse to this directory and select the `.geojson` files
-4. **Style the layers**:
-   - **VSPC locations** (from `v13/gis/vspc_locations_colored.geojson`): Use point markers with data-defined color using the `color` property
-   - **Precinct locations** (from `v13/gis/precinct_locations_colored.geojson`): Use point markers with data-defined color using the `color` property (automatically matches assigned VSPC)
-   - **Precinct locations** (basic): Use point markers, color by `voter_count_current` (graduated colors)
-   - **v11 assignments** (in `v11/gis/`): Use point markers, color by `assigned_vspc` (categorized colors), or use `reassigned` to highlight reassigned precincts
-
-## Regenerating Files
-
-### V13 Colored Files (Current)
-
-To regenerate VSPC and precinct colored files:
+To generate colored GeoJSON files:
 
 ```bash
-cd v13/gis
+cd gis
 python3 assign_vspc_colors.py
 ```
 
 This will:
-- Update VSPC colors in `vspc_locations_colored.geojson`
-- Update `vspc_color_mapping.json`
-- Automatically update precinct colors in `precinct_locations_colored.geojson`
+1. Load VSPC locations from `vspc_locations.geojson`
+2. Assign colors to VSPCs (using hardcoded assignments from v13)
+3. Generate `vspc_locations_colored.geojson` and `vspc_color_mapping.json`
+4. Automatically update precinct colors in `precinct_locations_colored.geojson`
 
 To manually update only precinct colors:
 
 ```bash
-cd v13/gis
+cd gis
 python3 assign_precinct_colors.py
 ```
 
-### Basic Export Files
+## Output Files
 
-To regenerate the basic GIS export files, run:
+### VSPC Files
 
-```bash
-python3 gis/export_gis_data.py
-```
+- **`vspc_locations.geojson`** - Basic VSPC locations (input for color assignment)
+- **`vspc_locations_colored.geojson`** - VSPC locations with assigned colors (current)
+- **`vspc_color_mapping.json`** - JSON mapping of VSPC names to colors
 
-This will update all GeoJSON files with the latest data from the master files and v11 assignments.
+### Precinct Files
+
+- **`precinct_locations.geojson`** - Basic precinct locations
+- **`precinct_locations_colored.geojson`** - Precinct locations with colors matching assigned VSPC (current)
+- **Note**: Original `precinct_centroids.csv` (source data) is archived in `Archived Resources/` - data was incorporated into `master_precincts.csv`
+
+### Reference Data
+
+- **`County_Boundary_SHAPE_WGS/`** - County boundary shapefile data
+
+## QGIS Usage
+
+### Loading Colored Files
+
+1. **VSPC Colors**:
+   - Load `vspc_locations_colored.geojson` in QGIS
+   - In Symbology, use 'Categorized' by 'name'
+   - For each category, set the color to match the 'color' property
+   - Or use 'Single Symbol' with data-defined color override using the 'color' field
+
+2. **Precinct Colors**:
+   - Load `precinct_locations_colored.geojson` in QGIS
+   - In Symbology, use 'Categorized' by 'assigned_vspc'
+   - For each category, set the color to match the 'color' property
+   - Or use 'Single Symbol' with data-defined color override using the 'color' field
+
+### Color Assignment Philosophy
+
+The current color system (based on v13):
+- **Stability**: All 32 VSPC colors are hardcoded for consistency
+- **Manual Overrides**: Colors can be changed in `assign_vspc_colors.py` without triggering full recalculation
+- **Automatic Precinct Colors**: Precinct colors automatically match their assigned VSPC colors
+- **Geographic Constraints**: Adjacent VSPCs (within 10 miles) use different color families
+
+## Historical Versions
+
+Previous versions of the GIS color assignment system are preserved in:
+- **`Archived Resources/v13/gis/`** - V13 color assignment system (source of current hardcoded colors)
+- **`Archived Resources/v12/gis/`** - V12 HSL-based automatic color assignment
+- **`Archived Resources/v11/gis/`** - V11 RGB-based color assignment
+
+See the version-specific READMEs in those directories for details on their approaches.
+
+## Additional Resources
+
+- **`QGIS_SETUP_GUIDE.md`** - Detailed QGIS setup and visualization instructions
+- **Arapahoe County GIS Data**: [GIS Data Download page](https://gis.arapahoegov.com/datadownload/) - Updated nightly with latest county data

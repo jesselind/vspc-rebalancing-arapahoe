@@ -7,22 +7,23 @@ This document contains detailed technical information about the VSPC rebalancing
 ## Current Status
 
 **Last Updated:** January 2025  
-**Current Development Version:** v14  
-**Latest Stable Version:** v13
+**Current System:** Version-agnostic (based on v14 algorithm)  
+**Historical Versions:** v1-v14 preserved in `Archived Resources/`
 
 ### Summary
 
 The project uses a ripple/cascade rebalancing algorithm focused on **voter volume distribution**. The algorithm processes VSPCs in order of size (largest first), fully distributing each VSPC's excess voters through ripple/cascade before moving to the next largest. **All scripts use master files** (`master_precincts.csv` and `master_vspcs.csv`) as the immutable source of truth, making the system version-agnostic. **Current voter registration data** (January 2026) is used as the primary source for voter counts.
 
-### Current Version: v14 (Development)
+### Current System (Version-Agnostic, Based on v14)
 
 - **Total Precincts**: 403
 - **Total VSPCs**: 32 (26 existing + 6 new)
 - **Total Voters**: ~419,000+ (current active voters from January 2026 registration)
 - **Target voters per VSPC**: ~13,000 (±25% tolerance)
 - **Algorithm**: Largest-first ripple/cascade - processes VSPCs in order of size, fully distributes each before moving to next
-- **Script**: `v14/generate_v14_ripple_rebalanced.py`
-- **Status**: Development - investigating geographic proximity improvements
+- **Script**: `generate_assignments.py` (root directory)
+- **Historical v14 script**: `Archived Resources/v14/generate_v14_ripple_rebalanced.py`
+- **Status**: Current production version
 
 ### Key Statistics
 
@@ -117,7 +118,7 @@ Rebalance precincts to prioritize **voter volume** while maintaining:
    - **How master file was created**: Data from this file was incorporated into `master_precincts.csv` as `Voter_Count_2022` column
    - **Process**: The "Voter Count" column from this file was matched to precincts by precinct number and added to master_precincts.csv
 
-3. **Precinct Centroids**: `precinct_centroids.csv` (to be archived)
+3. **Precinct Centroids**: `Archived Resources/precinct_centroids.csv` (archived - data incorporated into master file)
    - Source of truth for precinct coordinates
    - X = Longitude, Y = Latitude
    - **How master file was created**: Coordinate data (X, Y columns) was incorporated into `master_precincts.csv` as `Precinct_Longitude` and `Precinct_Latitude` columns
@@ -151,7 +152,7 @@ Following v5 structure:
 
 ## Technical Implementation
 
-### Python Script: `v10/generate_v10_ripple_rebalanced.py` (V10)
+### Python Script: `Archived Resources/v10/generate_v10_ripple_rebalanced.py` (V10 - Historical)
 
 **Purpose:** Generate V8 spreadsheet with all 32 VSPCs and improved rebalancing
 
@@ -173,13 +174,13 @@ Following v5 structure:
 5. Calculate distances to both nearest and assigned VSPCs
 6. Generate output files with all transparency columns
 
-**Output Files:**
-- `v8/VSPC - Precinct Distribution.csv` - One row per precinct with:
+**Output Files (Historical - in `Archived Resources/v8/`):**
+- `VSPC - Precinct Distribution.csv` - One row per precinct with:
   - Nearest VSPC and distance (geographic baseline)
   - Assigned VSPC and distance (rebalanced)
   - Distance difference and reassigned flag
   - All distances formatted to 2 decimal places in CSV output (full precision maintained in calculations)
-- `v8/VSPC Summary.csv` - One row per VSPC with totals
+- `VSPC Summary.csv` - One row per VSPC with totals
 
 ### Python Script: `generate_v6_spreadsheet.py`
 
@@ -290,20 +291,20 @@ Following v5 structure:
 - **Source Data Files:**
   - Current voter registration: `CE-VR011B_EXTERNAL_20260113_021047_03.txt` (January 2026) - **Active, used by scripts**
   - Historical voter data: `Archived Resources/2022 Precinct Table (4) (1).csv` (incorporated into master file)
-  - Precinct centroids: `Archived Resources/precinct_centroids.csv` (incorporated into master file) - **Archived**
+  - Precinct centroids: `Archived Resources/precinct_centroids.csv` (incorporated into master file) - **Archived** ✅
 - **Scripts:**
-  - `v10/generate_v10_ripple_rebalanced.py` ✅ V10 generator (uses master files)
-  - `v11/generate_v11_ripple_rebalanced.py` ✅ V11 generator (uses master files)
-  - `v8/analyze_trails_rebalancing.py` ✅ V8-specific analysis tool (uses master files)
-  - `generate_qgis_visualization.py` ✅ Updated to use master files
+  - `generate_assignments.py` ✅ Current generator (uses master files, based on v14)
+  - Historical scripts preserved in `Archived Resources/vX/` directories:
+    - `Archived Resources/v10/generate_v10_ripple_rebalanced.py` ✅ V10 generator
+    - `Archived Resources/v11/generate_v11_ripple_rebalanced.py` ✅ V11 generator
+    - `Archived Resources/v8/analyze_trails_rebalancing.py` ✅ V8-specific analysis tool
+  - `Archived Resources/generate_qgis_visualization.py` ✅ Archived (uses master files)
 - **Output:**
-  - **V10 output directory: `v10/` ✅ Created with 2 CSV files (current)**
-    - `VSPC - Precinct Distribution.csv` - One row per precinct
-    - `VSPC Summary.csv` - One row per VSPC
-- **V11 output directory: `v11/` ✅ Created with 3 CSV files (current)**
+  - **Current output directory: `output/` ✅ Created with 3 CSV files (current)**
     - `VSPC - Precinct Distribution.csv` - One row per precinct
     - `VSPC Locations.csv` - One row per VSPC
-    - `Summary Statistics.csv` - Summary statistics
+    - `Summary Statistics.csv` - Overall statistics
+  - **Historical outputs**: Preserved in `Archived Resources/vX/` directories for reference
 - Context: `VSPC_REBALANCING_CONTEXT.md` (this file)
 
 ## Notes & Considerations

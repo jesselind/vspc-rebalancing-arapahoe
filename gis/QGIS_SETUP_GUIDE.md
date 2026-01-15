@@ -9,8 +9,12 @@ This guide will walk you through loading and styling your VSPC and precinct data
 
 ## Quick Reference: Which Files to Use
 
-- **`vspc_locations.geojson`** - Always use this for VSPC locations
-- **`v11_precinct_assignments.geojson`** - Use this for precincts (includes VSPC assignment data, allows color-coding)
+- **`vspc_locations_colored.geojson`** - VSPC locations with assigned colors (recommended)
+- **`vspc_locations.geojson`** - Basic VSPC locations (if you need uncolored version)
+- **`precinct_locations_colored.geojson`** - Precinct locations with colors matching assigned VSPCs (recommended)
+- **`precinct_locations.geojson`** - Basic precinct locations (if you need uncolored version)
+
+**Note**: Historical files like `precinct_locations_colored.geojson` are preserved in `Archived Resources/v11/gis/` if needed for reference.
 
 ## Understanding QGIS Projects
 
@@ -188,16 +192,17 @@ Colors are assigned based on the **order of categories** in the symbology list (
 
 1. Go to **Layer** menu → **Add Layer** → **Add Vector Layer**
 2. Navigate to `gis/` directory
-3. Select `v11_precinct_assignments.geojson`
+3. Select `precinct_locations_colored.geojson` (recommended - includes colors and VSPC assignment data)
+   - Or use `precinct_locations.geojson` if you need the basic version without colors
 4. Click **Add**
-5. **Note**: This file includes VSPC assignment data - you can color-code precincts by their assigned VSPC (see Step 7)
+5. **Note**: The colored file includes VSPC assignment data - you can color-code precincts by their assigned VSPC (see Step 7)
 
 ---
 
 ## Step 6: Style Precinct Locations by Size (Based on Voter Count)
 
 **Tip - Add Layer Twice for Easy Toggling**: You can add the same layer twice and style them differently, then toggle between views:
-1. Add `v11_precinct_assignments.geojson` a second time using **Add Vector Layer** (it will appear as "v11_precinct_assignments (2)")
+1. Add `precinct_locations_colored.geojson` a second time using **Add Vector Layer** (it will appear as "precinct_locations_colored (2)")
 2. Style the first layer with size by voters (this section)
 3. Style the second layer with color by VSPC (Step 7)
 4. Rename them: Right-click each layer → **Rename Layer** → "Precincts by Size" and "Precincts by VSPC"
@@ -205,7 +210,7 @@ Colors are assigned based on the **order of categories** in the symbology list (
 
 This will make larger precincts (more voters) appear as larger circles.
 
-1. Right-click `v11_precinct_assignments` → **Properties**
+1. Right-click `precinct_locations_colored` → **Properties**
 2. Go to **Symbology** tab
 3. Change from **Single Symbol** to **Graduated**
 4. **Column**: Select **voters** (this is the voter count field)
@@ -222,7 +227,7 @@ This will make larger precincts (more voters) appear as larger circles.
 10. Click **OK**
 
 **Add precinct numbers as labels:**
-1. Right-click `v11_precinct_assignments` → **Properties**
+1. Right-click `precinct_locations_colored` → **Properties**
 2. Go to **Labels** tab
 3. Check **Single labels**
 4. **Label with**: Select **precinct** (this shows the precinct number)
@@ -239,9 +244,9 @@ This will make larger precincts (more voters) appear as larger circles.
 
 To see which precincts are assigned to which VSPCs:
 
-**Note**: If you followed the tip in Step 6 and added the layer twice, style the second layer (v11_precinct_assignments (2)) with this approach, then you can toggle between size and color views.
+**Note**: If you followed the tip in Step 6 and added the layer twice, style the second layer (precinct_locations_colored (2)) with this approach, then you can toggle between size and color views.
 
-1. Right-click `v11_precinct_assignments` (or the second instance if you added it twice) → **Properties**
+1. Right-click `precinct_locations_colored` (or the second instance if you added it twice) → **Properties**
 2. Go to **Symbology** tab
 3. Change to **Categorized**
 4. **Column**: Select **assigned_vspc**
@@ -301,7 +306,7 @@ You can reorder and organize layers:
 
 1. In the **Layers** panel, drag layers up/down to reorder
 2. **Recommended order** (top to bottom):
-   - `v11_precinct_assignments` (precincts with assignment data, on top)
+   - `precinct_locations_colored` (precincts with assignment data, on top)
    - `vspc_locations` (VSPC points)
    - County boundary (if added)
    - Base map (bottom)
@@ -315,7 +320,7 @@ You can reorder and organize layers:
 
 To see which precincts were reassigned from their nearest VSPC:
 
-1. Right-click `v11_precinct_assignments` → **Properties**
+1. Right-click `precinct_locations_colored` → **Properties**
 2. Go to **Symbology** tab
 3. Change to **Categorized**
 4. **Column**: Select **reassigned**
@@ -408,11 +413,11 @@ This saves all layers, styling, layouts, and settings. Exported PDF/image files 
 
 ## Recommended Layer Combinations
 
-**Overview**: `v11_precinct_assignments` (colored by assigned_vspc) + `vspc_locations` + county boundary + base map
+**Overview**: `precinct_locations_colored` (colored by assigned_vspc) + `vspc_locations` + county boundary + base map
 
-**Reassigned Precincts**: `v11_precinct_assignments` (colored by reassigned) + `vspc_locations` + county boundary + base map
+**Reassigned Precincts**: `precinct_locations_colored` (colored by reassigned) + `vspc_locations` + county boundary + base map
 
-**Size Analysis**: `v11_precinct_assignments` (size by voters) + `vspc_locations` + county boundary + base map
+**Size Analysis**: `precinct_locations_colored` (size by voters) + `vspc_locations` + county boundary + base map
 
 ---
 
