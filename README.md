@@ -26,6 +26,24 @@ The system:
 - **GIS integration**: QGIS-compatible GeoJSON files for visualization
 - **Transparency**: Detailed output showing nearest vs. assigned VSPC, distances, and reassignment flags
 
+## How the Rebalancing Process Works
+
+**Step 1: Calculate the target.** The system adds up all active voters across all precincts and divides by the number of VSPCs to determine the ideal number of voters each VSPC should handle.
+
+**Step 2: Count current voters at each VSPC.** For each VSPC, the system adds up all the voters from every precinct currently assigned to that VSPC.
+
+**Step 3: Identify overloaded and underloaded VSPCs.** Overloaded VSPCs have more voters than the target (plus a 25% tolerance), while underloaded VSPCs have fewer voters than the target (minus a 25% tolerance).
+
+**Step 4: Start with the most overloaded VSPC.** The system finds the VSPC with the most voters and calculates how many excess voters it has.
+
+**Step 5: Redistribute excess voters.** The system looks at all precincts assigned to the overloaded VSPC, starting with the largest precincts first. For each precinct, it finds the closest underloaded VSPC that can accept more voters. Precincts can only move away from their nearest VSPC, never closer. After each move, the system recalculates voter counts for all VSPCs.
+
+**Step 6: Move to the next most overloaded VSPC.** Once the first VSPC is balanced, the system finds the next most overloaded VSPC and repeats the process.
+
+**Step 7: Continue until balanced.** The system keeps repeating this process until all VSPCs are within the acceptable range, or until no more moves are possible.
+
+**Step 8: Final result.** Each VSPC ends up with a voter count close to the target, with precincts assigned to reasonably close VSPCs. The system prioritizes balancing voter volume over keeping precincts at their nearest VSPC.
+
 ## Quick Start
 
 ### Prerequisites
