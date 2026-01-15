@@ -1,0 +1,13 @@
+SECTION,CONTENT
+Overview,This workbook assigns Arapahoe County election precincts to county-approved Voter Service and Polling Centers (VSPCs) for organizational and staffing purposes. Two assignment models are provided: Geographic and Rebalanced.
+Geographic (GEO) Assignment,"Definition: Each precinct is assigned to the single closest VSPC based on straight-line distance from the precinct centroid.
+Purpose: Establishes the natural, geography-based baseline assignment.
+Use when: Validating proximity, auditing assignments, or understanding default county geography.
+Do NOT use for: Final staffing decisions if precinct loads are uneven."
+Rebalanced Assignment,"Definition: A controlled reassignment of some precincts to nearby VSPCs to achieve balanced voter volume across VSPCs (target based on total voters divided by number of VSPCs).
+Constraints: Precincts may only be reassigned to their second-closest VSPC; east/west cross-county jumps are prohibited.
+Rural exception: Rural VSPCs may exceed the target due to geography.
+Use when: Final operational planning and staffing."
+Sheet Usage,"Use GEO sheets to understand natural geography.
+Use REBALANCED sheets for staffing, leadership assignment, and execution.
+Never mix GEO and REBALANCED data in the same operational workflow."

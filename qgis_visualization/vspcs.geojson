@@ -1,0 +1,709 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0096,
+          39.5886
+        ]
+      },
+      "properties": {
+        "vspc_name": "Arapahoe Community College",
+        "voters": 18678,
+        "precincts": 19,
+        "address": "5900 S Santa Fe Dr",
+        "city": "Littleton",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.49,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7839,
+          39.7226
+        ]
+      },
+      "properties": {
+        "vspc_name": "Arapahoe County CentrePoint Plaza",
+        "voters": 9921,
+        "precincts": 8,
+        "address": "14980 E Alameda Dr",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.79,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6486,
+          39.7027
+        ]
+      },
+      "properties": {
+        "vspc_name": "Arapahoe County Fairgrounds",
+        "voters": 3169,
+        "precincts": 7,
+        "address": "25690 E Quincy Ave",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.25,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.881,
+          39.5747
+        ]
+      },
+      "properties": {
+        "vspc_name": "Arapahoe County Lima Plaza",
+        "voters": 10656,
+        "precincts": 11,
+        "address": "6954 S Lima St",
+        "city": "Centennial",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.85,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.864,
+          39.7291
+        ]
+      },
+      "properties": {
+        "vspc_name": "Aurora Center for Active Adults",
+        "voters": 10663,
+        "precincts": 10,
+        "address": "30 Del Mar Cir",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.85,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8363,
+          39.7406
+        ]
+      },
+      "properties": {
+        "vspc_name": "Aurora Public Schools Educational Service Center 4",
+        "voters": 1250,
+        "precincts": 2,
+        "address": "1085 Peoria St",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.1,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7988,
+          39.7411
+        ]
+      },
+      "properties": {
+        "vspc_name": "Aurora Public Schools Professional Learning & Conference Center",
+        "voters": 1067,
+        "precincts": 2,
+        "address": "15771 E 1st Ave",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.08,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8071,
+          39.7316
+        ]
+      },
+      "properties": {
+        "vspc_name": "Beck Recreation Center",
+        "voters": 4538,
+        "precincts": 4,
+        "address": "800 Telluride St",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.36,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.026,
+          39.6072
+        ]
+      },
+      "properties": {
+        "vspc_name": "Bemis Public Library",
+        "voters": 17318,
+        "precincts": 18,
+        "address": "6014 S Datura St",
+        "city": "Littleton",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.38,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.774,
+          39.737
+        ]
+      },
+      "properties": {
+        "vspc_name": "Central Recreation Center",
+        "voters": 96,
+        "precincts": 1,
+        "address": "18150 E Vassar Pl",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.01,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9389,
+          39.5794
+        ]
+      },
+      "properties": {
+        "vspc_name": "Cherry Creek School District Instructional Support Facility",
+        "voters": 14779,
+        "precincts": 16,
+        "address": "5416 S Riviera Way",
+        "city": "Centennial",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 1.18,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7999,
+          39.7008
+        ]
+      },
+      "properties": {
+        "vspc_name": "City of Aurora Municipal Center",
+        "voters": 22678,
+        "precincts": 26,
+        "address": "15151 E Alameda Pkwy",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.8,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0212,
+          39.6515
+        ]
+      },
+      "properties": {
+        "vspc_name": "City of Sheridan Municipal Building",
+        "voters": 9801,
+        "precincts": 8,
+        "address": "4101 S Federal Blvd",
+        "city": "Sheridan",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.78,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8304,
+          39.7329
+        ]
+      },
+      "properties": {
+        "vspc_name": "Community College of Aurora CentreTech Campus",
+        "voters": 3377,
+        "precincts": 3,
+        "address": "16000 E CentreTech Pkwy",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.27,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9162,
+          39.6948
+        ]
+      },
+      "properties": {
+        "vspc_name": "Cook Park Recreation Center",
+        "voters": 9953,
+        "precincts": 11,
+        "address": "7100 Cherry Creek S Dr",
+        "city": "Denver",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.79,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9877,
+          39.6476
+        ]
+      },
+      "properties": {
+        "vspc_name": "Englewood Civic Center",
+        "voters": 16453,
+        "precincts": 21,
+        "address": "1000 Englewood Pkwy",
+        "city": "Englewood",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.31,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8893,
+          39.6139
+        ]
+      },
+      "properties": {
+        "vspc_name": "Greenwood Village City Hall",
+        "voters": 22311,
+        "precincts": 22,
+        "address": "6060 S Quebec St",
+        "city": "Greenwood Village",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.77,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8125,
+          39.7067
+        ]
+      },
+      "properties": {
+        "vspc_name": "Heather Gardens",
+        "voters": 15185,
+        "precincts": 15,
+        "address": "2888 S Heather Gardens Way",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 1.21,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.2235,
+          39.7088
+        ]
+      },
+      "properties": {
+        "vspc_name": "Kelver Library",
+        "voters": 4433,
+        "precincts": 3,
+        "address": "585 S Main St",
+        "city": "Byers",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.35,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7846,
+          39.708
+        ]
+      },
+      "properties": {
+        "vspc_name": "Mission Viejo Library",
+        "voters": 10864,
+        "precincts": 11,
+        "address": "15324 E Hampden Cir",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.86,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7195,
+          39.7093
+        ]
+      },
+      "properties": {
+        "vspc_name": "Parkside Village Retirement Resort",
+        "voters": 3974,
+        "precincts": 3,
+        "address": "14501 E Crestline Dr",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.32,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8395,
+          39.7299
+        ]
+      },
+      "properties": {
+        "vspc_name": "Pickens Technical College",
+        "voters": 9484,
+        "precincts": 8,
+        "address": "500 Airport Blvd Bldg E",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.75,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8664,
+          39.582
+        ]
+      },
+      "properties": {
+        "vspc_name": "Smoky Hill Library",
+        "voters": 10216,
+        "precincts": 7,
+        "address": "5430 S Biscay Cir",
+        "city": "Centennial",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.81,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9508,
+          39.5825
+        ]
+      },
+      "properties": {
+        "vspc_name": "Southglenn Library",
+        "voters": 19688,
+        "precincts": 22,
+        "address": "6972 S Vine St",
+        "city": "Centennial",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 1.57,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6871,
+          39.6806
+        ]
+      },
+      "properties": {
+        "vspc_name": "Tallyns Reach Library",
+        "voters": 10367,
+        "precincts": 11,
+        "address": "23911 E Arapahoe Rd",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.82,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.742,
+          39.6824
+        ]
+      },
+      "properties": {
+        "vspc_name": "The Avenue Church",
+        "voters": 28069,
+        "precincts": 24,
+        "address": "13231 E Mississippi Ave",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 2.23,
+        "color": "#FF8800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.936013,
+          39.699078
+        ]
+      },
+      "properties": {
+        "vspc_name": "City of Glendale Municipal Building",
+        "voters": 9695,
+        "precincts": 9,
+        "address": "950 S. Birch Street",
+        "city": "Glendale",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.77,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.879361,
+          39.702851
+        ]
+      },
+      "properties": {
+        "vspc_name": "Community College of Aurora Lowry Campus",
+        "voters": 15403,
+        "precincts": 17,
+        "address": "710 Alton Way",
+        "city": "Denver",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 1.23,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.873538,
+          39.739659
+        ]
+      },
+      "properties": {
+        "vspc_name": "Martin Luther King, Jr. Library",
+        "voters": 2723,
+        "precincts": 2,
+        "address": "9898 E. Colfax Ave",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.22,
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.709516,
+          39.683763
+        ]
+      },
+      "properties": {
+        "vspc_name": "Murphy Creek Golf Course",
+        "voters": 10570,
+        "precincts": 7,
+        "address": "1700 S. Old Tom Morris Rd.",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "No",
+        "target_ratio": 0.84,
+        "color": "#0000FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.795841,
+          39.610379
+        ]
+      },
+      "properties": {
+        "vspc_name": "Trails Recreation Center",
+        "voters": 74978,
+        "precincts": 73,
+        "address": "16799 E. Lake Ave.",
+        "city": "Centennial",
+        "is_trails": "Yes",
+        "is_overloaded": "Yes",
+        "is_underloaded": "No",
+        "target_ratio": 5.96,
+        "color": "#FF0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.701549,
+          39.723954
+        ]
+      },
+      "properties": {
+        "vspc_name": "Vista PEAK",
+        "voters": 0,
+        "precincts": 2,
+        "address": "24500 E. 6th Ave",
+        "city": "Aurora",
+        "is_trails": "No",
+        "is_overloaded": "No",
+        "is_underloaded": "Yes",
+        "target_ratio": 0.0,
+        "color": "#00FF00"
+      }
+    }
+  ]
+}

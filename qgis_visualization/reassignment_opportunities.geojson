@@ -1,0 +1,7597 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.76186,
+            39.61047391
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 205,
+        "voters": 710,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.08,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.76186,
+            39.61047391
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 205,
+        "voters": 710,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.78,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.76186,
+            39.61047391
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 205,
+        "voters": 710,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.9,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.76186,
+            39.61047391
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 205,
+        "voters": 710,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.27,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7969095,
+            39.59204775
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 206,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.76,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7969095,
+            39.59204775
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 206,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.64,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7969095,
+            39.59204775
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 206,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.14,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7969095,
+            39.59204775
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 206,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.89,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7840868,
+            39.58755652
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 207,
+        "voters": 1176,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.4,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7840868,
+            39.58755652
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 207,
+        "voters": 1176,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.24,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7840868,
+            39.58755652
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 207,
+        "voters": 1176,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.89,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7840868,
+            39.58755652
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 207,
+        "voters": 1176,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.93,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7685542,
+            39.58232179
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 213,
+        "voters": 1052,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.21,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7685542,
+            39.58232179
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 213,
+        "voters": 1052,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 6.01,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7685542,
+            39.58232179
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 213,
+        "voters": 1052,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 6.79,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7685542,
+            39.58232179
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 213,
+        "voters": 1052,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 7.06,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7488722,
+            39.57103452
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 215,
+        "voters": 699,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.3,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7488722,
+            39.57103452
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 215,
+        "voters": 699,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 7.04,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7488722,
+            39.57103452
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 215,
+        "voters": 699,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 7.7,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7488722,
+            39.57103452
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 215,
+        "voters": 699,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 8.04,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7438236,
+            39.58518741
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 216,
+        "voters": 946,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.53,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7438236,
+            39.58518741
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 216,
+        "voters": 946,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.72,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7438236,
+            39.58518741
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 216,
+        "voters": 946,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 7.05,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7438236,
+            39.58518741
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 216,
+        "voters": 946,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 7.25,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8074356,
+            39.59114056
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 256,
+        "voters": 522,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.2,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8074356,
+            39.59114056
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 256,
+        "voters": 522,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.08,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8074356,
+            39.59114056
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 256,
+        "voters": 522,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.63,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8074356,
+            39.59114056
+          ],
+          [
+            -104.9389,
+            39.5794
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 256,
+        "voters": 522,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Cherry Creek School District Instructional Support Facility",
+        "distance_mi": 7.05,
+        "to_vspc_voters": 14779,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015451,
+            39.60523561
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 257,
+        "voters": 1321,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.81,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015451,
+            39.60523561
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 257,
+        "voters": 1321,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.71,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015451,
+            39.60523561
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 257,
+        "voters": 1321,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.73,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015451,
+            39.60523561
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 257,
+        "voters": 1321,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.2,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7880057,
+            39.60045324
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 261,
+        "voters": 1572,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.36,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7880057,
+            39.60045324
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 261,
+        "voters": 1572,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.26,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7880057,
+            39.60045324
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 261,
+        "voters": 1572,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.47,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7880057,
+            39.60045324
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 261,
+        "voters": 1572,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.17,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7951114,
+            39.61640989
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 262,
+        "voters": 1338,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.48,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7951114,
+            39.61640989
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 262,
+        "voters": 1338,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.02,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7951114,
+            39.61640989
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 262,
+        "voters": 1338,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.36,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7951114,
+            39.61640989
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 262,
+        "voters": 1338,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.41,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8034228,
+            39.61575517
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 263,
+        "voters": 1074,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.08,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8034228,
+            39.61575517
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 263,
+        "voters": 1074,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.57,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8034228,
+            39.61575517
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 263,
+        "voters": 1074,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.01,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8034228,
+            39.61575517
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 263,
+        "voters": 1074,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.65,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015338,
+            39.62203615
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 264,
+        "voters": 1252,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.42,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015338,
+            39.62203615
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 264,
+        "voters": 1252,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.7,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015338,
+            39.62203615
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 264,
+        "voters": 1252,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.24,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8015338,
+            39.62203615
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 264,
+        "voters": 1252,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.35,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7423611,
+            39.60289854
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 265,
+        "voters": 1082,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.49,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7423611,
+            39.60289854
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 265,
+        "voters": 1082,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.85,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7423611,
+            39.60289854
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 265,
+        "voters": 1082,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.12,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7423611,
+            39.60289854
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 265,
+        "voters": 1082,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.76,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6985318,
+            39.5712004
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 266,
+        "voters": 1151,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 7.58,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6985318,
+            39.5712004
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 266,
+        "voters": 1151,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 7.8,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6985318,
+            39.5712004
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 266,
+        "voters": 1151,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 8.02,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6985318,
+            39.5712004
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 266,
+        "voters": 1151,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 8.97,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7578669,
+            39.59982332
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 267,
+        "voters": 1118,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.77,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7578669,
+            39.59982332
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 267,
+        "voters": 1118,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.91,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7578669,
+            39.59982332
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 267,
+        "voters": 1118,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.34,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7578669,
+            39.59982332
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 267,
+        "voters": 1118,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.73,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7125553,
+            39.57304631
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 268,
+        "voters": 881,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 7.55,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7125553,
+            39.57304631
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 268,
+        "voters": 881,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 7.65,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7125553,
+            39.57304631
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 268,
+        "voters": 881,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 7.72,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7125553,
+            39.57304631
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 268,
+        "voters": 881,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 8.22,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8248043,
+            39.63553599
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 269,
+        "voters": 1095,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.74,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8248043,
+            39.63553599
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 269,
+        "voters": 1095,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.31,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8248043,
+            39.63553599
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 269,
+        "voters": 1095,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.7,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8248043,
+            39.63553599
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 269,
+        "voters": 1095,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.96,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.819837,
+            39.63308099
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 270,
+        "voters": 981,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.93,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.819837,
+            39.63308099
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 270,
+        "voters": 981,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.31,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.819837,
+            39.63308099
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 270,
+        "voters": 981,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.8,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.819837,
+            39.63308099
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 270,
+        "voters": 981,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 5.1,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8126432,
+            39.63192165
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 271,
+        "voters": 798,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.27,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8126432,
+            39.63192165
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 271,
+        "voters": 798,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.48,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8126432,
+            39.63192165
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 271,
+        "voters": 798,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.81,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8126432,
+            39.63192165
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 271,
+        "voters": 798,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.13,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8261167,
+            39.62761783
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 272,
+        "voters": 890,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.49,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8261167,
+            39.62761783
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 272,
+        "voters": 890,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.81,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8261167,
+            39.62761783
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 272,
+        "voters": 890,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.68,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8261167,
+            39.62761783
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 272,
+        "voters": 890,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.25,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8176288,
+            39.62705844
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 273,
+        "voters": 906,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.92,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8176288,
+            39.62705844
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 273,
+        "voters": 906,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.05,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8176288,
+            39.62705844
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 273,
+        "voters": 906,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.95,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8176288,
+            39.62705844
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 273,
+        "voters": 906,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8144217,
+            39.61880264
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 274,
+        "voters": 1236,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.76,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8144217,
+            39.61880264
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 274,
+        "voters": 1236,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.0,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8144217,
+            39.61880264
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 274,
+        "voters": 1236,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.67,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8144217,
+            39.61880264
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 274,
+        "voters": 1236,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.72,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8043997,
+            39.62914923
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 275,
+        "voters": 663,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.64,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8043997,
+            39.62914923
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 275,
+        "voters": 663,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.64,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8043997,
+            39.62914923
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 275,
+        "voters": 663,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.96,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8043997,
+            39.62914923
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 275,
+        "voters": 663,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.96,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7813591,
+            39.61973283
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 276,
+        "voters": 324,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.81,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7813591,
+            39.61973283
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 276,
+        "voters": 324,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.22,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7813591,
+            39.61973283
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 276,
+        "voters": 324,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.69,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7813591,
+            39.61973283
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 276,
+        "voters": 324,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.76,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7874171,
+            39.62091545
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 277,
+        "voters": 886,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.89,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7874171,
+            39.62091545
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 277,
+        "voters": 886,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.99,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7874171,
+            39.62091545
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 277,
+        "voters": 886,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.44,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7874171,
+            39.62091545
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 277,
+        "voters": 886,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.56,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.787936,
+            39.6158605
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 278,
+        "voters": 525,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.79,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.787936,
+            39.6158605
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 278,
+        "voters": 525,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.21,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.787936,
+            39.6158605
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 278,
+        "voters": 525,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.4,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.787936,
+            39.6158605
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 278,
+        "voters": 525,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.71,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7775283,
+            39.61611836
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 279,
+        "voters": 951,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.95,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7775283,
+            39.61611836
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 279,
+        "voters": 951,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.29,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7775283,
+            39.61611836
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 279,
+        "voters": 951,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.91,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7775283,
+            39.61611836
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 279,
+        "voters": 951,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.95,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693012,
+            39.61355181
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 280,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.97,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693012,
+            39.61355181
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 280,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.61,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693012,
+            39.61355181
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 280,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.8,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693012,
+            39.61355181
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 280,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 6.24,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7823998,
+            39.61191723
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 281,
+        "voters": 1217,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.93,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7823998,
+            39.61191723
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 281,
+        "voters": 1217,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.32,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7823998,
+            39.61191723
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 281,
+        "voters": 1217,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.69,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7823998,
+            39.61191723
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 281,
+        "voters": 1217,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.85,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7820615,
+            39.60685227
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 282,
+        "voters": 1563,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.81,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7820615,
+            39.60685227
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 282,
+        "voters": 1563,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.64,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7820615,
+            39.60685227
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 282,
+        "voters": 1563,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.72,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7820615,
+            39.60685227
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 282,
+        "voters": 1563,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.73,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7637352,
+            39.60514119
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 283,
+        "voters": 969,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.46,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7637352,
+            39.60514119
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 283,
+        "voters": 969,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.7,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7637352,
+            39.60514119
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 283,
+        "voters": 969,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.15,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7637352,
+            39.60514119
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 283,
+        "voters": 969,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 6.59,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8114015,
+            39.60392966
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 284,
+        "voters": 785,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 3.3,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8114015,
+            39.60392966
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 284,
+        "voters": 785,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.2,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8114015,
+            39.60392966
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 284,
+        "voters": 785,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 4.22,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8114015,
+            39.60392966
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 284,
+        "voters": 785,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.56,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7762094,
+            39.60006035
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 285,
+        "voters": 793,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.96,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7762094,
+            39.60006035
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 285,
+        "voters": 793,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 5.85,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7762094,
+            39.60006035
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 285,
+        "voters": 793,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.97,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7762094,
+            39.60006035
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 285,
+        "voters": 793,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 6.1,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8167109,
+            39.59957357
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 287,
+        "voters": 214,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 2.91,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8167109,
+            39.59957357
+          ],
+          [
+            -104.881,
+            39.5747
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 287,
+        "voters": 214,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Lima Plaza",
+        "distance_mi": 3.83,
+        "to_vspc_voters": 10656,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8167109,
+            39.59957357
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 287,
+        "voters": 214,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.99,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8167109,
+            39.59957357
+          ],
+          [
+            -104.9389,
+            39.5794
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 287,
+        "voters": 214,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Cherry Creek School District Instructional Support Facility",
+        "distance_mi": 6.65,
+        "to_vspc_voters": 14779,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965543,
+            39.62591293
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 288,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.8,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965543,
+            39.62591293
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 288,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.86,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965543,
+            39.62591293
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 288,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.01,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965543,
+            39.62591293
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 288,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7932361,
+            39.62568743
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 289,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.77,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7932361,
+            39.62568743
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 289,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.93,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7932361,
+            39.62568743
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 289,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7932361,
+            39.62568743
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 289,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.2,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7949747,
+            39.63292565
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 290,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.43,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7949747,
+            39.63292565
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 290,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.7,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7949747,
+            39.63292565
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 290,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7949747,
+            39.63292565
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 290,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8044655,
+            39.63643115
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 291,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.45,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8044655,
+            39.63643115
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 291,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.6,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8044655,
+            39.63643115
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 291,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.78,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8044655,
+            39.63643115
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 291,
+        "voters": 0,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.87,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693057,
+            39.64434293
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 301,
+        "voters": 686,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.0,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693057,
+            39.64434293
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 301,
+        "voters": 686,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.19,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693057,
+            39.64434293
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 301,
+        "voters": 686,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.23,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7693057,
+            39.64434293
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 301,
+        "voters": 686,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.47,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7872881,
+            39.62700118
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 304,
+        "voters": 933,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.52,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7872881,
+            39.62700118
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 304,
+        "voters": 933,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.14,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7872881,
+            39.62700118
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 304,
+        "voters": 933,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.23,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7872881,
+            39.62700118
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 304,
+        "voters": 933,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 5.5,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7795492,
+            39.62690724
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 305,
+        "voters": 1341,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.32,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7795492,
+            39.62690724
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 305,
+        "voters": 1341,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.22,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7795492,
+            39.62690724
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 305,
+        "voters": 1341,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.41,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7795492,
+            39.62690724
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 305,
+        "voters": 1341,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.57,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7679602,
+            39.62880064
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 306,
+        "voters": 847,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.95,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7679602,
+            39.62880064
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 306,
+        "voters": 847,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.91,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7679602,
+            39.62880064
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 306,
+        "voters": 847,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.26,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7679602,
+            39.62880064
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 306,
+        "voters": 847,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 5.54,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7708515,
+            39.62677931
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 307,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.14,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7708515,
+            39.62677931
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 307,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.11,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7708515,
+            39.62677931
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 307,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.34,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7708515,
+            39.62677931
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 307,
+        "voters": 763,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 5.66,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7678064,
+            39.62040452
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 308,
+        "voters": 1246,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.5,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7678064,
+            39.62040452
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 308,
+        "voters": 1246,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.36,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7678064,
+            39.62040452
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 308,
+        "voters": 1246,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.81,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7678064,
+            39.62040452
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 308,
+        "voters": 1246,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.88,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7772725,
+            39.62220727
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 309,
+        "voters": 1333,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.56,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7772725,
+            39.62220727
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 309,
+        "voters": 1333,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 5.5,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7772725,
+            39.62220727
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 309,
+        "voters": 1333,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.56,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7772725,
+            39.62220727
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 309,
+        "voters": 1333,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.57,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.75854,
+            39.61882968
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 321,
+        "voters": 1365,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.48,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.75854,
+            39.61882968
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 321,
+        "voters": 1365,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.19,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.75854,
+            39.61882968
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 321,
+        "voters": 1365,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.71,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.75854,
+            39.61882968
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 321,
+        "voters": 1365,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 6.08,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7295265,
+            39.58165575
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 327,
+        "voters": 1245,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.99,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7295265,
+            39.58165575
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 327,
+        "voters": 1245,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 7.13,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7295265,
+            39.58165575
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 327,
+        "voters": 1245,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 7.2,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7295265,
+            39.58165575
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 327,
+        "voters": 1245,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 7.29,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7345949,
+            39.59173791
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 329,
+        "voters": 1384,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.28,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7345949,
+            39.59173791
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 329,
+        "voters": 1384,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.5,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7345949,
+            39.59173791
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 329,
+        "voters": 1384,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.64,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7345949,
+            39.59173791
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 329,
+        "voters": 1384,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 7.05,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7496695,
+            39.61297596
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 332,
+        "voters": 1139,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.81,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7496695,
+            39.61297596
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 332,
+        "voters": 1139,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.34,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7496695,
+            39.61297596
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 332,
+        "voters": 1139,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.74,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7496695,
+            39.61297596
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 332,
+        "voters": 1139,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.57,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7406408,
+            39.60959594
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 333,
+        "voters": 692,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.03,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7406408,
+            39.60959594
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 333,
+        "voters": 692,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.39,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7406408,
+            39.60959594
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 333,
+        "voters": 692,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.67,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7406408,
+            39.60959594
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 333,
+        "voters": 692,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.96,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7343916,
+            39.61043536
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 334,
+        "voters": 1441,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.99,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7343916,
+            39.61043536
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 334,
+        "voters": 1441,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.24,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7343916,
+            39.61043536
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 334,
+        "voters": 1441,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.46,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7343916,
+            39.61043536
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 334,
+        "voters": 1441,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.88,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7246404,
+            39.60901824
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 335,
+        "voters": 1697,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.15,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7246404,
+            39.60901824
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 335,
+        "voters": 1697,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.23,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7246404,
+            39.60901824
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 335,
+        "voters": 1697,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.33,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7246404,
+            39.60901824
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 335,
+        "voters": 1697,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.93,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7217699,
+            39.61816391
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 336,
+        "voters": 1616,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.57,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7217699,
+            39.61816391
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 336,
+        "voters": 1616,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.58,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7217699,
+            39.61816391
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 336,
+        "voters": 1616,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 4.69,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7217699,
+            39.61816391
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 336,
+        "voters": 1616,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.3,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7317136,
+            39.62046843
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 337,
+        "voters": 1473,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.31,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7317136,
+            39.62046843
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 337,
+        "voters": 1473,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.53,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7317136,
+            39.62046843
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 337,
+        "voters": 1473,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 4.78,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7317136,
+            39.62046843
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 337,
+        "voters": 1473,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.17,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7430405,
+            39.6213426
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 338,
+        "voters": 991,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.22,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7430405,
+            39.6213426
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 338,
+        "voters": 991,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.67,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7430405,
+            39.6213426
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 338,
+        "voters": 991,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.06,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7430405,
+            39.6213426
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 338,
+        "voters": 991,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.2,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7484225,
+            39.61901284
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 339,
+        "voters": 1306,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.39,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7484225,
+            39.61901284
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 339,
+        "voters": 1306,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.93,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7484225,
+            39.61901284
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 339,
+        "voters": 1306,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.36,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7484225,
+            39.61901284
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 339,
+        "voters": 1306,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 6.28,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7002195,
+            39.59147675
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 353,
+        "voters": 1122,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.2,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7002195,
+            39.59147675
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 353,
+        "voters": 1122,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.4,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7002195,
+            39.59147675
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 353,
+        "voters": 1122,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.66,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7002195,
+            39.59147675
+          ],
+          [
+            -104.6486,
+            39.7027
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 353,
+        "voters": 1122,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Fairgrounds",
+        "distance_mi": 8.16,
+        "to_vspc_voters": 3169,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7190434,
+            39.60659349
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 368,
+        "voters": 748,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 5.36,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7190434,
+            39.60659349
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 368,
+        "voters": 748,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 5.38,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7190434,
+            39.60659349
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 368,
+        "voters": 748,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.39,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7190434,
+            39.60659349
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 368,
+        "voters": 748,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 7.1,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7444016,
+            39.63389998
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 369,
+        "voters": 1690,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.35,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7444016,
+            39.63389998
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 369,
+        "voters": 1690,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 3.91,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7444016,
+            39.63389998
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 369,
+        "voters": 1690,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 4.44,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7444016,
+            39.63389998
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 369,
+        "voters": 1690,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 5.38,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7476584,
+            39.62707297
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 370,
+        "voters": 1656,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.83,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7476584,
+            39.62707297
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 370,
+        "voters": 1656,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.41,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7476584,
+            39.62707297
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 370,
+        "voters": 1656,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 4.9,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7476584,
+            39.62707297
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 370,
+        "voters": 1656,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 5.8,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7152717,
+            39.58262351
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 375,
+        "voters": 1485,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.93,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7152717,
+            39.58262351
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 375,
+        "voters": 1485,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.99,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7152717,
+            39.58262351
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 375,
+        "voters": 1485,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 7.04,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7152717,
+            39.58262351
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 375,
+        "voters": 1485,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 8.05,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6833833,
+            39.57420793
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 377,
+        "voters": 1104,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 7.35,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6833833,
+            39.57420793
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 377,
+        "voters": 1104,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 7.7,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6833833,
+            39.57420793
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 377,
+        "voters": 1104,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 8.1,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6833833,
+            39.57420793
+          ],
+          [
+            -104.6486,
+            39.7027
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 377,
+        "voters": 1104,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Fairgrounds",
+        "distance_mi": 9.07,
+        "to_vspc_voters": 3169,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7359386,
+            39.58846881
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 379,
+        "voters": 1016,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.5,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7359386,
+            39.58846881
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 379,
+        "voters": 1016,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.73,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7359386,
+            39.58846881
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 379,
+        "voters": 1016,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.88,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7359386,
+            39.58846881
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 379,
+        "voters": 1016,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 6.96,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7126877,
+            39.59400709
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 380,
+        "voters": 1008,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.14,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7126877,
+            39.59400709
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 380,
+        "voters": 1008,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.2,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7126877,
+            39.59400709
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 380,
+        "voters": 1008,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 6.3,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7126877,
+            39.59400709
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 380,
+        "voters": 1008,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 7.97,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7352313,
+            39.6155056
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 382,
+        "voters": 589,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.64,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7352313,
+            39.6155056
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 382,
+        "voters": 589,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 4.91,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7352313,
+            39.6155056
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 382,
+        "voters": 589,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 5.18,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7352313,
+            39.6155056
+          ],
+          [
+            -104.7195,
+            39.7093
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 382,
+        "voters": 589,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Parkside Village Retirement Resort",
+        "distance_mi": 6.53,
+        "to_vspc_voters": 3974,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6852206,
+            39.58960388
+          ],
+          [
+            -104.6871,
+            39.6806
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 383,
+        "voters": 1282,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Tallyns Reach Library",
+        "distance_mi": 6.29,
+        "to_vspc_voters": 10367,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6852206,
+            39.58960388
+          ],
+          [
+            -104.709516,
+            39.683763
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 383,
+        "voters": 1282,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Murphy Creek Golf Course",
+        "distance_mi": 6.63,
+        "to_vspc_voters": 10570,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6852206,
+            39.58960388
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 383,
+        "voters": 1282,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 7.09,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.6852206,
+            39.58960388
+          ],
+          [
+            -104.6486,
+            39.7027
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 383,
+        "voters": 1282,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Arapahoe County Fairgrounds",
+        "distance_mi": 8.05,
+        "to_vspc_voters": 3169,
+        "to_vspc_underloaded": "Yes",
+        "color": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8209661,
+            39.6477681
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 446,
+        "voters": 816,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 3.83,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8209661,
+            39.6477681
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 446,
+        "voters": 816,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.1,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8209661,
+            39.6477681
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 446,
+        "voters": 816,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 4.32,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8209661,
+            39.6477681
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 446,
+        "voters": 816,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.59,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.812455,
+            39.64579531
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 447,
+        "voters": 1614,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 3.86,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.812455,
+            39.64579531
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 447,
+        "voters": 1614,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.21,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.812455,
+            39.64579531
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 447,
+        "voters": 1614,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.52,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.812455,
+            39.64579531
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 447,
+        "voters": 1614,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.55,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8242267,
+            39.64215377
+          ],
+          [
+            -104.8893,
+            39.6139
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 448,
+        "voters": 1735,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Greenwood Village City Hall",
+        "distance_mi": 3.98,
+        "to_vspc_voters": 22311,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8242267,
+            39.64215377
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 448,
+        "voters": 1735,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.25,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8242267,
+            39.64215377
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 448,
+        "voters": 1735,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.5,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8242267,
+            39.64215377
+          ],
+          [
+            -104.8664,
+            39.582
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 448,
+        "voters": 1735,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Smoky Hill Library",
+        "distance_mi": 4.72,
+        "to_vspc_voters": 10216,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.800198,
+            39.64078178
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 461,
+        "voters": 1325,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 4.15,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.800198,
+            39.64078178
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 461,
+        "voters": 1325,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.23,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.800198,
+            39.64078178
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 461,
+        "voters": 1325,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.6,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.800198,
+            39.64078178
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 461,
+        "voters": 1325,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.72,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8068362,
+            39.64648725
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 462,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 3.77,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8068362,
+            39.64648725
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 462,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.17,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8068362,
+            39.64648725
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 462,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 4.25,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.8068362,
+            39.64648725
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 462,
+        "voters": 1215,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.41,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965752,
+            39.64561901
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 463,
+        "voters": 1477,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 3.82,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965752,
+            39.64561901
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 463,
+        "voters": 1477,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.86,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965752,
+            39.64561901
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 463,
+        "voters": 1477,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 4.3,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7965752,
+            39.64561901
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 463,
+        "voters": 1477,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 4.36,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7972136,
+            39.65133756
+          ],
+          [
+            -104.7999,
+            39.7008
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 464,
+        "voters": 930,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "City of Aurora Municipal Center",
+        "distance_mi": 3.42,
+        "to_vspc_voters": 22678,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7972136,
+            39.65133756
+          ],
+          [
+            -104.742,
+            39.6824
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 464,
+        "voters": 930,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "The Avenue Church",
+        "distance_mi": 3.64,
+        "to_vspc_voters": 28069,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7972136,
+            39.65133756
+          ],
+          [
+            -104.8125,
+            39.7067
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 464,
+        "voters": 930,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Heather Gardens",
+        "distance_mi": 3.91,
+        "to_vspc_voters": 15185,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -104.7972136,
+            39.65133756
+          ],
+          [
+            -104.7846,
+            39.708
+          ]
+        ]
+      },
+      "properties": {
+        "precinct": 464,
+        "voters": 930,
+        "from_vspc": "Trails Recreation Center",
+        "to_vspc": "Mission Viejo Library",
+        "distance_mi": 3.97,
+        "to_vspc_voters": 10864,
+        "to_vspc_underloaded": "No",
+        "color": "#FFFF00"
+      }
+    }
+  ]
+}

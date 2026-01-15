@@ -1,0 +1,6 @@
+Rule
+Primary assignment is nearest VSPC by distance.
+Target is approximately 12 precincts per VSPC.
+Rebalancing only allowed to the second-closest VSPC.
+No east/west cross-county reassignment.
+Rural VSPCs may exceed target to preserve sane travel.

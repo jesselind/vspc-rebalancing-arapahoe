@@ -1,0 +1,677 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0188881082992,
+          39.608274887955744
+        ]
+      },
+      "properties": {
+        "name": "Arapahoe Community College",
+        "address": "5900 S Santa Fe Dr",
+        "city": "Littleton",
+        "state": "CO",
+        "zip": "80120",
+        "latitude": 39.608274887955744,
+        "longitude": -105.0188881082992,
+        "color": "#8B008B",
+        "color_hex": "#8B008B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.81474986607812,
+          39.7087716881346
+        ]
+      },
+      "properties": {
+        "name": "Arapahoe County CentrePoint Plaza",
+        "address": "14980 E Alameda Dr",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80012",
+        "latitude": 39.7087716881346,
+        "longitude": -104.81474986607812,
+        "color": "#FF00FF",
+        "color_hex": "#FF00FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.68912718495126,
+          39.63355321244632
+        ]
+      },
+      "properties": {
+        "name": "Arapahoe County Fairgrounds",
+        "address": "25690 E Quincy Ave",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80016",
+        "latitude": 39.63355321244632,
+        "longitude": -104.68912718495126,
+        "color": "#6A3D9A",
+        "color_hex": "#6A3D9A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.85627912782668,
+          39.590544313360326
+        ]
+      },
+      "properties": {
+        "name": "Arapahoe County Lima Plaza",
+        "address": "6954 S Lima St",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80112",
+        "latitude": 39.590544313360326,
+        "longitude": -104.85627912782668,
+        "color": "#00FF00",
+        "color_hex": "#00FF00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.84910572528804,
+          39.724940516728296
+        ]
+      },
+      "properties": {
+        "name": "Aurora Center for Active Adults",
+        "address": "30 Del Mar Cir",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.724940516728296,
+        "longitude": -104.84910572528804,
+        "color": "#FF7F00",
+        "color_hex": "#FF7F00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.84771876318167,
+          39.73388166458309
+        ]
+      },
+      "properties": {
+        "name": "Aurora Public Schools Educational Service Center 4",
+        "address": "1085 Peoria St",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.73388166458309,
+        "longitude": -104.84771876318167,
+        "color": "#FB9A99",
+        "color_hex": "#FB9A99"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.80474230787424,
+          39.72058253659017
+        ]
+      },
+      "properties": {
+        "name": "Aurora Public Schools Professional Learning & Conference Center",
+        "address": "15771 E 1st Ave",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.72058253659017,
+        "longitude": -104.80474230787424,
+        "color": "#00FA9A",
+        "color_hex": "#00FA9A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.77980023595714,
+          39.73055742739373
+        ]
+      },
+      "properties": {
+        "name": "Beck Recreation Center",
+        "address": "800 Telluride St",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.73055742739373,
+        "longitude": -104.77980023595714,
+        "color": "#4DAF4A",
+        "color_hex": "#4DAF4A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.00377161101056,
+          39.60788423451915
+        ]
+      },
+      "properties": {
+        "name": "Bemis Public Library",
+        "address": "6014 S Datura St",
+        "city": "Littleton",
+        "state": "CO",
+        "zip": "80120",
+        "latitude": 39.60788423451915,
+        "longitude": -105.00377161101056,
+        "color": "#32CD32",
+        "color_hex": "#32CD32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7747440285756,
+          39.66882135612159
+        ]
+      },
+      "properties": {
+        "name": "Central Recreation Center",
+        "address": "18150 E Vassar Pl",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80013",
+        "latitude": 39.66882135612159,
+        "longitude": -104.7747440285756,
+        "color": "#000000",
+        "color_hex": "#000000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.73732039332928,
+          39.61991742350876
+        ]
+      },
+      "properties": {
+        "name": "Cherry Creek School District Instructional Support Facility",
+        "address": "5416 S Riviera Way",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80112",
+        "latitude": 39.61991742350876,
+        "longitude": -104.73732039332928,
+        "color": "#E31A1C",
+        "color_hex": "#E31A1C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.81169759451926,
+          39.71093919413168
+        ]
+      },
+      "properties": {
+        "name": "City of Aurora Municipal Center",
+        "address": "15151 E Alameda Pkwy",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80012",
+        "latitude": 39.71093919413168,
+        "longitude": -104.81169759451926,
+        "color": "#228B22",
+        "color_hex": "#228B22"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.93606703235127,
+          39.69903579462828
+        ]
+      },
+      "properties": {
+        "name": "City of Glendale Municipal Building",
+        "address": "950 S. Birch Street",
+        "city": "Glendale",
+        "state": "CO",
+        "zip": "80246",
+        "latitude": 39.69903579462828,
+        "longitude": -104.93606703235127,
+        "color": "#FF1493",
+        "color_hex": "#FF1493"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.02659358606886,
+          39.641923555298085
+        ]
+      },
+      "properties": {
+        "name": "City of Sheridan Municipal Building",
+        "address": "4101 S Federal Blvd",
+        "city": "Sheridan",
+        "state": "CO",
+        "zip": "80110",
+        "latitude": 39.641923555298085,
+        "longitude": -105.02659358606886,
+        "color": "#FF4500",
+        "color_hex": "#FF4500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.80270212086928,
+          39.71800229439271
+        ]
+      },
+      "properties": {
+        "name": "Community College of Aurora CentreTech Campus",
+        "address": "16000 E CentreTech Pkwy",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.71800229439271,
+        "longitude": -104.80270212086928,
+        "color": "#8B0000",
+        "color_hex": "#8B0000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.88204128911954,
+          39.728357863069846
+        ]
+      },
+      "properties": {
+        "name": "Community College of Aurora Lowry Campus",
+        "address": "710 Alton Way",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80230",
+        "latitude": 39.728357863069846,
+        "longitude": -104.88204128911954,
+        "color": "#A65628",
+        "color_hex": "#A65628"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.90887411861291,
+          39.68723582366944
+        ]
+      },
+      "properties": {
+        "name": "Cook Park Recreation Center",
+        "address": "7100 Cherry Creek S Dr",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80224",
+        "latitude": 39.68723582366944,
+        "longitude": -104.90887411861291,
+        "color": "#984EA3",
+        "color_hex": "#984EA3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99832744047104,
+          39.65488297539241
+        ]
+      },
+      "properties": {
+        "name": "Englewood Civic Center",
+        "address": "1000 Englewood Pkwy",
+        "city": "Englewood",
+        "state": "CO",
+        "zip": "80110",
+        "latitude": 39.65488297539241,
+        "longitude": -104.99832744047104,
+        "color": "#B15928",
+        "color_hex": "#B15928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.90318859424694,
+          39.60659716215891
+        ]
+      },
+      "properties": {
+        "name": "Greenwood Village City Hall",
+        "address": "6060 S Quebec St",
+        "city": "Greenwood Village",
+        "state": "CO",
+        "zip": "80111",
+        "latitude": 39.60659716215891,
+        "longitude": -104.90318859424694,
+        "color": "#1E90FF",
+        "color_hex": "#1E90FF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.83107979351828,
+          39.663533414404135
+        ]
+      },
+      "properties": {
+        "name": "Heather Gardens",
+        "address": "2888 S Heather Gardens Way",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80014",
+        "latitude": 39.663533414404135,
+        "longitude": -104.83107979351828,
+        "color": "#E41A1C",
+        "color_hex": "#E41A1C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.22382817345328,
+          39.70333757701648
+        ]
+      },
+      "properties": {
+        "name": "Kelver Library",
+        "address": "585 S Main St",
+        "city": "Byers",
+        "state": "CO",
+        "zip": "80103",
+        "latitude": 39.70333757701648,
+        "longitude": -104.22382817345328,
+        "color": "#DC143C",
+        "color_hex": "#DC143C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.87349903416153,
+          39.73997991802986
+        ]
+      },
+      "properties": {
+        "name": "Martin Luther King, Jr. Library",
+        "address": "9898 E. Colfax Ave",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80010",
+        "latitude": 39.73997991802986,
+        "longitude": -104.87349903416153,
+        "color": "#33A02C",
+        "color_hex": "#33A02C"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.80811835911354,
+          39.651067400729026
+        ]
+      },
+      "properties": {
+        "name": "Mission Viejo Library",
+        "address": "15324 E Hampden Cir",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80013",
+        "latitude": 39.651067400729026,
+        "longitude": -104.80811835911354,
+        "color": "#0000CD",
+        "color_hex": "#0000CD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.70737777251487,
+          39.68563955400579
+        ]
+      },
+      "properties": {
+        "name": "Murphy Creek Golf Course",
+        "address": "1700 S. Old Tom Morris Rd.",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80018",
+        "latitude": 39.68563955400579,
+        "longitude": -104.70737777251487,
+        "color": "#F781BF",
+        "color_hex": "#F781BF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.81920306411358,
+          39.62148268315485
+        ]
+      },
+      "properties": {
+        "name": "Parkside Village Retirement Resort",
+        "address": "14501 E Crestline Dr",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80015",
+        "latitude": 39.62148268315485,
+        "longitude": -104.81920306411358,
+        "color": "#00FFFF",
+        "color_hex": "#00FFFF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.78980422250676,
+          39.723860185954656
+        ]
+      },
+      "properties": {
+        "name": "Pickens Technical College",
+        "address": "500 Airport Blvd Bldg E",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80011",
+        "latitude": 39.723860185954656,
+        "longitude": -104.78980422250676,
+        "color": "#377EB8",
+        "color_hex": "#377EB8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7672439390529,
+          39.618304079420255
+        ]
+      },
+      "properties": {
+        "name": "Smoky Hill Library",
+        "address": "5430 S Biscay Cir",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80015",
+        "latitude": 39.618304079420255,
+        "longitude": -104.7672439390529,
+        "color": "#FF6347",
+        "color_hex": "#FF6347"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.96423713720502,
+          39.590837240246614
+        ]
+      },
+      "properties": {
+        "name": "Southglenn Library",
+        "address": "6972 S Vine St",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80122",
+        "latitude": 39.590837240246614,
+        "longitude": -104.96423713720502,
+        "color": "#00CED1",
+        "color_hex": "#00CED1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.70901570770036,
+          39.59034317733333
+        ]
+      },
+      "properties": {
+        "name": "Tallyns Reach Library",
+        "address": "23911 E Arapahoe Rd",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80016",
+        "latitude": 39.59034317733333,
+        "longitude": -104.70901570770036,
+        "color": "#FFD700",
+        "color_hex": "#FFD700"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.83532054700969,
+          39.69758355448659
+        ]
+      },
+      "properties": {
+        "name": "The Avenue Church",
+        "address": "13231 E Mississippi Ave",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80012",
+        "latitude": 39.69758355448659,
+        "longitude": -104.83532054700969,
+        "color": "#CCCCCC",
+        "color_hex": "#CCCCCC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.79561016112255,
+          39.61050762501705
+        ]
+      },
+      "properties": {
+        "name": "Trails Recreation Center",
+        "address": "16799 E. Lake Ave.",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80016",
+        "latitude": 39.61050762501705,
+        "longitude": -104.79561016112255,
+        "color": "#FFFF33",
+        "color_hex": "#FFFF33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.70154232405696,
+          39.72399192592024
+        ]
+      },
+      "properties": {
+        "name": "Vista PEAK",
+        "address": "24500 E. 6th Ave",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": "80018",
+        "latitude": 39.72399192592024,
+        "longitude": -104.70154232405696,
+        "color": "#1F78B4",
+        "color_hex": "#1F78B4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+Column Name,Meaning,Use / Notes
+Precinct_Lon,Longitude of precinct centroid,Calculated from GIS
+Precinct_Lat,Latitude of precinct centroid,Calculated from GIS
+US_CONG,U.S. Congressional district number,Reference only
+CO_SEN,Colorado Senate district,Reference only
+CO_HSE,Colorado House district,Reference only
+ARAP,Arapahoe County commissioner district,Reference only
+COMM,County commission sub-area code,Reference only
+Precinct,Full internal precinct identifier,Long numeric ID (GIS internal)
+PRECINCT,Official election precinct number,Canonical precinct ID
+HYPERLINK,Link to county precinct map,Opens official map
+created_us,Record creation timestamp (UTC),Metadata
+created_da,Record creation date,Metadata
+last_edite,Last edit timestamp,Metadata
+last_edi_1,Last edit date,Metadata
+Voter_Coun,Registered voter count (legacy field),Often incomplete
+Voter_Co_1,Alternate voter count field,Often duplicates above
+Shape_Leng,GIS polygon perimeter length,Not operational
+Shape_Area,GIS polygon area,Not operational
+VSPC_Name,Assigned VSPC name (primary),Key operational field
+Address,VSPC street address,Directions / logistics
+City,VSPC city,Informational
+State,VSPC state,Always CO
+ZIP,VSPC ZIP code,Informational
+VSPC_Lat,VSPC latitude,Distance calc
+VSPC_Lon,VSPC longitude,Distance calc
+Area_Lead,Lead coordinator for this VSPC,To be filled
+Precinct_Lead,Lead for this precinct,To be filled
+Hand_Counter_1,Counter slot 1,Precinct staffing
+Hand_Counter_2,Counter slot 2,
+Hand_Counter_3,Counter slot 3,
+Hand_Counter_4,Counter slot 4,
+Hand_Counter_5,Counter slot 5,
+Hand_Counter_6,Counter slot 6,
+Hand_Counter_7,Counter slot 7,
+Hand_Counter_8,Counter slot 8,
+Hand_Counter_9,Counter slot 9,
+Hand_Counter_10,Counter slot 10,Target ≥10
+PRECINCT_3,Last 3 digits of precinct number,Preferred field for ops
+Secondary,Secondary-closest VSPC name,Used only for rebalancing
+VSPC_Rebalanced,Final assigned VSPC after balancing,GEO vs adjusted

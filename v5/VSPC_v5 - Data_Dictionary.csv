@@ -1,0 +1,20 @@
+Column Name,Definition,Appears In,Operational?
+PRECINCT,Official 3-digit election precinct number,All assignment sheets,Yes
+Precinct,Full internal GIS precinct identifier,Full_Assignments sheets,No
+Precinct_Lat,Latitude of precinct centroid,Full_Assignments sheets,No
+Precinct_Lon,Longitude of precinct centroid,Full_Assignments sheets,No
+US_CONG,U.S. Congressional district number,Full_Assignments sheets,No
+CO_SEN,Colorado Senate district number,Full_Assignments sheets,No
+CO_HSE,Colorado House district number,Full_Assignments sheets,No
+ARAP,Arapahoe County commissioner district,Full_Assignments sheets,No
+COMM,County commission sub-area code,Full_Assignments sheets,No
+VSPC_Name,Assigned Voter Service & Polling Center name,All assignment sheets,Yes
+Address,Street address of the VSPC,All assignment sheets,Yes
+City,City of the VSPC,All assignment sheets,No
+State,State of the VSPC (CO),All assignment sheets,No
+ZIP,ZIP code of the VSPC,All assignment sheets,No
+VSPC_Lat,Latitude of the VSPC,All assignment sheets,No
+VSPC_Lon,Longitude of the VSPC,All assignment sheets,No
+Area_Lead,Coordinator responsible for the VSPC area,All assignment sheets,Yes
+Precinct_Lead,Lead responsible for the individual precinct,All assignment sheets,Yes
+Hand_Counter_1–10,Staffing slots for hand counters,All assignment sheets,Yes
