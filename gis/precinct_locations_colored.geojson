@@ -27,8 +27,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 0.54,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6494485870838,
         "longitude": -105.02956703285
       }
@@ -59,8 +59,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 0.73,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6468168498723,
         "longitude": -105.014334137337
       }
@@ -91,8 +91,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 0.23,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6386713197424,
         "longitude": -105.027470381353
       }
@@ -699,8 +699,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 0.84,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6301105388657,
         "longitude": -105.022903981462
       }
@@ -1307,8 +1307,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 1.74,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6235381869819,
         "longitude": -105.048855006666
       }
@@ -1339,8 +1339,8 @@
         "nearest_vspc": "City of Sheridan Municipal Building",
         "distance_to_assigned_mi": 1.47,
         "reassigned": false,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.6230863863359,
         "longitude": -105.039259560603
       }
@@ -2203,8 +2203,8 @@
         "nearest_vspc": "Southglenn Library",
         "distance_to_assigned_mi": 4.29,
         "reassigned": true,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.5855291171116,
         "longitude": -104.993014179572
       }
@@ -2395,8 +2395,8 @@
         "nearest_vspc": "Southglenn Library",
         "distance_to_assigned_mi": 5.33,
         "reassigned": true,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.569806427996,
         "longitude": -104.991236400347
       }
@@ -2459,8 +2459,8 @@
         "nearest_vspc": "Southglenn Library",
         "distance_to_assigned_mi": 4.61,
         "reassigned": true,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.5853562482786,
         "longitude": -104.980609208011
       }
@@ -2619,8 +2619,8 @@
         "nearest_vspc": "Southglenn Library",
         "distance_to_assigned_mi": 4.18,
         "reassigned": true,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.5983949482799,
         "longitude": -104.972016120774
       }
@@ -2843,8 +2843,8 @@
         "nearest_vspc": "Southglenn Library",
         "distance_to_assigned_mi": 5.93,
         "reassigned": true,
-        "color": "#FFFFFF",
-        "color_hex": "#FFFFFF",
+        "color": "#000000",
+        "color_hex": "#000000",
         "latitude": 39.5701676229361,
         "longitude": -104.96548930604
       }
