@@ -160,6 +160,16 @@ One row per VSPC (32 rows) with:
 - Total voters assigned
 - Total precincts assigned
 - Address information
+- Primary Captain District (DC assignment based on highest percentage of precincts)
+- Secondary Captain District (additional DC assignments for unassigned DCs)
+
+### DC Assignment Verification.csv
+
+One row per VSPC (32 rows) with:
+- VSPC name
+- Primary Captain District and percentage of that DC's precincts at the VSPC
+- Secondary Captain District and percentage of that DC's precincts at the VSPC
+- Used to verify DCs are assigned to VSPCs where they have meaningful precinct coverage
 
 ### Summary Statistics.csv
 

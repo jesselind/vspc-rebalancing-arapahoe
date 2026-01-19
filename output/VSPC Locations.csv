@@ -1,33 +1,33 @@
-Assigned VSPC,Voters Assigned,Precincts Assigned,Address,City,State,ZIP
-Arapahoe Community College,20725,17,5900 S Santa Fe Dr,Littleton,CO,80120
-Arapahoe County CentrePoint Plaza,9582,10,14980 E Alameda Dr,Aurora,CO,80012
-Arapahoe County Fairgrounds,18968,15,25690 E Quincy Ave,Aurora,CO,80016
-Arapahoe County Lima Plaza,20444,17,6954 S Lima St,Centennial,CO,80112
-Aurora Center for Active Adults,8836,10,30 Del Mar Cir,Aurora,CO,80011
-Aurora Public Schools Educational Service Center 4,6195,6,1085 Peoria St,Aurora,CO,80011
-Aurora Public Schools Professional Learning & Conference Center,3651,4,15771 E 1st Ave,Aurora,CO,80011
-Beck Recreation Center,1001,2,800 Telluride St,Aurora,CO,80011
-Bemis Public Library,20676,23,6014 S Datura St,Littleton,CO,80120
-Central Recreation Center,15868,19,18150 E Vassar Pl,Aurora,CO,80013
-Cherry Creek School District Instructional Support Facility,24654,17,5416 S Riviera Way,Centennial,CO,80112
-City of Aurora Municipal Center,6133,6,15151 E Alameda Pkwy,Aurora,CO,80012
-City of Glendale Municipal Building,2150,2,950 S. Birch Street,Glendale,CO,80246
-City of Sheridan Municipal Building,11507,11,4101 S Federal Blvd,Sheridan,CO,80110
-Community College of Aurora CentreTech Campus,4215,4,16000 E CentreTech Pkwy,Aurora,CO,80011
-Community College of Aurora Lowry Campus,2083,2,710 Alton Way,Denver,CO,80230
-Cook Park Recreation Center,16862,20,7100 Cherry Creek S Dr,Denver,CO,80224
-Englewood Civic Center,20885,22,1000 Englewood Pkwy,Englewood,CO,80110
-Greenwood Village City Hall,16033,21,6060 S Quebec St,Greenwood Village,CO,80111
-Heather Gardens,21123,22,2888 S Heather Gardens Way,Aurora,CO,80014
-Kelver Library,4667,4,585 S Main St,Byers,CO,80103
-"Martin Luther King, Jr. Library",1995,1,9898 E. Colfax Ave,Aurora,CO,80010
-Mission Viejo Library,21193,19,15324 E Hampden Cir,Aurora,CO,80013
-Murphy Creek Golf Course,14073,9,1700 S. Old Tom Morris Rd.,Aurora,CO,80018
-Parkside Village Retirement Resort,19166,17,14501 E Crestline Dr,Aurora,CO,80015
-Pickens Technical College,3251,3,500 Airport Blvd Bldg E,Aurora,CO,80011
-Smoky Hill Library,20838,18,5430 S Biscay Cir,Centennial,CO,80015
-Southglenn Library,19803,24,6972 S Vine St,Centennial,CO,80122
-Tallyns Reach Library,14891,13,23911 E Arapahoe Rd,Aurora,CO,80016
-The Avenue Church,18737,18,13231 E Mississippi Ave,Aurora,CO,80012
-Trails Recreation Center,20119,21,16799 E. Lake Ave.,Centennial,CO,80016
-Vista PEAK,9026,6,24500 E. 6th Ave,Aurora,CO,80018
+VSPC,Voters Assigned,Precincts Assigned,Address,City,State,ZIP,Primary Captain District,Secondary Captain District
+Arapahoe Community College,20725,17,5900 S Santa Fe Dr,Littleton,CO,80120,4,6
+Arapahoe County CentrePoint Plaza,9582,10,14980 E Alameda Dr,Aurora,CO,80012,15,
+Arapahoe County Fairgrounds,18968,15,25690 E Quincy Ave,Aurora,CO,80016,29,
+Arapahoe County Lima Plaza,20444,17,6954 S Lima St,Centennial,CO,80112,11,9
+Aurora Center for Active Adults,8836,10,30 Del Mar Cir,Aurora,CO,80011,14,
+Aurora Public Schools Educational Service Center 4,6195,6,1085 Peoria St,Aurora,CO,80011,13,
+Aurora Public Schools Professional Learning & Conference Center,3651,4,15771 E 1st Ave,Aurora,CO,80011,16,
+Beck Recreation Center,1001,2,800 Telluride St,Aurora,CO,80011,17,
+Bemis Public Library,20676,23,6014 S Datura St,Littleton,CO,80120,5,3
+Central Recreation Center,15868,19,18150 E Vassar Pl,Aurora,CO,80013,27,22
+Cherry Creek School District Instructional Support Facility,24654,17,5416 S Riviera Way,Centennial,CO,80112,32,28
+City of Aurora Municipal Center,6133,6,15151 E Alameda Pkwy,Aurora,CO,80012,16,
+City of Glendale Municipal Building,2150,2,950 S. Birch Street,Glendale,CO,80246,19,
+City of Sheridan Municipal Building,11507,11,4101 S Federal Blvd,Sheridan,CO,80110,1,
+Community College of Aurora CentreTech Campus,4215,4,16000 E CentreTech Pkwy,Aurora,CO,80011,16,
+Community College of Aurora Lowry Campus,2083,2,710 Alton Way,Denver,CO,80230,13,
+Cook Park Recreation Center,16862,20,7100 Cherry Creek S Dr,Denver,CO,80224,20,
+Englewood Civic Center,20885,22,1000 Englewood Pkwy,Englewood,CO,80110,1,2
+Greenwood Village City Hall,16033,21,6060 S Quebec St,Greenwood Village,CO,80111,10,12
+Heather Gardens,21123,22,2888 S Heather Gardens Way,Aurora,CO,80014,23,
+Kelver Library,4667,4,585 S Main St,Byers,CO,80103,35,
+"Martin Luther King, Jr. Library",1995,1,9898 E. Colfax Ave,Aurora,CO,80010,13,
+Mission Viejo Library,21193,19,15324 E Hampden Cir,Aurora,CO,80013,24,26
+Murphy Creek Golf Course,14073,9,1700 S. Old Tom Morris Rd.,Aurora,CO,80018,17,
+Parkside Village Retirement Resort,19166,17,14501 E Crestline Dr,Aurora,CO,80015,25,
+Pickens Technical College,3251,3,500 Airport Blvd Bldg E,Aurora,CO,80011,17,
+Smoky Hill Library,20838,18,5430 S Biscay Cir,Centennial,CO,80015,31,
+Southglenn Library,19803,24,6972 S Vine St,Centennial,CO,80122,8,7
+Tallyns Reach Library,14891,13,23911 E Arapahoe Rd,Aurora,CO,80016,34,
+The Avenue Church,18737,18,13231 E Mississippi Ave,Aurora,CO,80012,21,
+Trails Recreation Center,20119,21,16799 E. Lake Ave.,Centennial,CO,80016,33,30
+Vista PEAK,9026,6,24500 E. 6th Ave,Aurora,CO,80018,18,
