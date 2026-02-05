@@ -291,25 +291,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.88204128911954,
-          39.728357863069846
-        ]
-      },
-      "properties": {
-        "name": "Community College of Aurora Lowry Campus",
-        "address": "710 Alton Way",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80230",
-        "latitude": 39.728357863069846,
-        "longitude": -104.88204128911954
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -104.90887411861291,
           39.68723582366944
         ]

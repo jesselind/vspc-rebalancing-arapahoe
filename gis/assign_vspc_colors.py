@@ -208,7 +208,6 @@ MANUAL_COLOR_OVERRIDES = {
     "City of Glendale Municipal Building": "#424242",
     "City of Sheridan Municipal Building": "#000000",  # Black
     "Community College of Aurora CentreTech Campus": "#F5F5F5",
-    "Community College of Aurora Lowry Campus": "#9370DB",  # Royal purple (lighter, more blue)
     "Cook Park Recreation Center": "#E2C3EC",  # Medium lavender (between light and plum)
     "Englewood Civic Center": "#FFFFFF",
     "Greenwood Village City Hall": "#DF00FF",

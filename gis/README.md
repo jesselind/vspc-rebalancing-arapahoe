@@ -76,7 +76,7 @@ python3 assign_precinct_colors.py
 ### Color Assignment Philosophy
 
 The current color system (based on v13):
-- **Stability**: All 32 VSPC colors are hardcoded for consistency
+- **Stability**: All 31 VSPC colors are hardcoded for consistency
 - **Manual Overrides**: Colors can be changed in `assign_vspc_colors.py` without triggering full recalculation
 - **Automatic Precinct Colors**: Precinct colors automatically match their assigned VSPC colors
 - **Geographic Constraints**: Adjacent VSPCs (within 10 miles) use different color families
