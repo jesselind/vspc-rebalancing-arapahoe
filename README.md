@@ -2,6 +2,8 @@
 
 A Python-based system for rebalancing voting precinct assignments to Voter Service & Polling Centers (VSPCs) in Arapahoe County, Colorado. This project optimizes voter distribution across 32 VSPCs to ensure balanced workloads while maintaining geographic proximity.
 
+> **Disclaimer:** This code was created with AI assistance. Python is not yet a language I know, and therefore I have not vetted it manually. Use at your own risk.
+
 ## Overview
 
 ### What is this project?
