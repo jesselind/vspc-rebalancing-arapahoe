@@ -27,7 +27,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.81474986607812,
+          -104.81474986607813,
           39.7087716881346
         ]
       },
@@ -38,7 +38,7 @@
         "state": "CO",
         "zip": "80012",
         "latitude": 39.7087716881346,
-        "longitude": -104.81474986607812,
+        "longitude": -104.81474986607813,
         "color": "#00CFFF",
         "color_hex": "#00CFFF"
       }
@@ -49,7 +49,7 @@
         "type": "Point",
         "coordinates": [
           -104.68912718495126,
-          39.63355321244632
+          39.633553212446316
         ]
       },
       "properties": {
@@ -58,7 +58,7 @@
         "city": "Aurora",
         "state": "CO",
         "zip": "80016",
-        "latitude": 39.63355321244632,
+        "latitude": 39.633553212446316,
         "longitude": -104.68912718495126,
         "color": "#FFFFFF",
         "color_hex": "#FFFFFF"
@@ -111,18 +111,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.84771876318167,
+          -104.84771876318169,
           39.73388166458309
         ]
       },
       "properties": {
-        "name": "Aurora Public Schools Educational Service Center 4",
+        "name": "Aurora Public Schools - Educational Service Center 4",
         "address": "1085 Peoria St",
         "city": "Aurora",
         "state": "CO",
         "zip": "80011",
         "latitude": 39.73388166458309,
-        "longitude": -104.84771876318167,
+        "longitude": -104.84771876318169,
         "color": "#355E3B",
         "color_hex": "#355E3B"
       }
@@ -137,7 +137,7 @@
         ]
       },
       "properties": {
-        "name": "Aurora Public Schools Professional Learning & Conference Center",
+        "name": "Aurora Public Schools - Professional Learning and Conference Center",
         "address": "15771 E 1st Ave",
         "city": "Aurora",
         "state": "CO",
@@ -153,28 +153,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.77980023595714,
-          39.73055742739373
-        ]
-      },
-      "properties": {
-        "name": "Beck Recreation Center",
-        "address": "800 Telluride St",
-        "city": "Aurora",
-        "state": "CO",
-        "zip": "80011",
-        "latitude": 39.73055742739373,
-        "longitude": -104.77980023595714,
-        "color": "#00FFCF",
-        "color_hex": "#00FFCF"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -105.00377161101056,
+          -105.00377161101055,
           39.60788423451915
         ]
       },
@@ -185,7 +164,7 @@
         "state": "CO",
         "zip": "80120",
         "latitude": 39.60788423451915,
-        "longitude": -105.00377161101056,
+        "longitude": -105.00377161101055,
         "color": "#20FF00",
         "color_hex": "#20FF00"
       }
@@ -195,7 +174,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.7747440285756,
+          -104.77474402857561,
           39.66882135612159
         ]
       },
@@ -206,7 +185,7 @@
         "state": "CO",
         "zip": "80013",
         "latitude": 39.66882135612159,
-        "longitude": -104.7747440285756,
+        "longitude": -104.77474402857561,
         "color": "#000000",
         "color_hex": "#000000"
       }
@@ -221,7 +200,7 @@
         ]
       },
       "properties": {
-        "name": "Cherry Creek School District Instructional Support Facility",
+        "name": "Cherry Creek School District - Instructional Support Facility",
         "address": "5416 S Riviera Way",
         "city": "Centennial",
         "state": "CO",
@@ -238,7 +217,7 @@
         "type": "Point",
         "coordinates": [
           -104.81169759451926,
-          39.71093919413168
+          39.710939194131676
         ]
       },
       "properties": {
@@ -247,7 +226,7 @@
         "city": "Aurora",
         "state": "CO",
         "zip": "80012",
-        "latitude": 39.71093919413168,
+        "latitude": 39.710939194131676,
         "longitude": -104.81169759451926,
         "color": "#FF6600",
         "color_hex": "#FF6600"
@@ -305,7 +284,7 @@
         ]
       },
       "properties": {
-        "name": "Community College of Aurora CentreTech Campus",
+        "name": "Community College of Aurora - CentreTech Campus",
         "address": "16000 E CentreTech Pkwy",
         "city": "Aurora",
         "state": "CO",
@@ -321,7 +300,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.90887411861291,
+          -104.90887411861293,
           39.68723582366944
         ]
       },
@@ -332,7 +311,7 @@
         "state": "CO",
         "zip": "80224",
         "latitude": 39.68723582366944,
-        "longitude": -104.90887411861291,
+        "longitude": -104.90887411861293,
         "color": "#E2C3EC",
         "color_hex": "#E2C3EC"
       }
@@ -342,7 +321,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.99832744047104,
+          -104.99832744047103,
           39.65488297539241
         ]
       },
@@ -353,7 +332,7 @@
         "state": "CO",
         "zip": "80110",
         "latitude": 39.65488297539241,
-        "longitude": -104.99832744047104,
+        "longitude": -104.99832744047103,
         "color": "#FFFFFF",
         "color_hex": "#FFFFFF"
       }
@@ -389,7 +368,7 @@
         ]
       },
       "properties": {
-        "name": "Heather Gardens",
+        "name": "Heather Gardens Clubhouse",
         "address": "2888 S Heather Gardens Way",
         "city": "Aurora",
         "state": "CO",
@@ -406,7 +385,7 @@
         "type": "Point",
         "coordinates": [
           -104.22382817345328,
-          39.70333757701648
+          39.703337577016484
         ]
       },
       "properties": {
@@ -415,7 +394,7 @@
         "city": "Byers",
         "state": "CO",
         "zip": "80103",
-        "latitude": 39.70333757701648,
+        "latitude": 39.703337577016484,
         "longitude": -104.22382817345328,
         "color": "#00FF70",
         "color_hex": "#00FF70"
@@ -426,7 +405,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.87349903416153,
+          -104.87349903416151,
           39.73997991802986
         ]
       },
@@ -437,7 +416,7 @@
         "state": "CO",
         "zip": "80010",
         "latitude": 39.73997991802986,
-        "longitude": -104.87349903416153,
+        "longitude": -104.87349903416151,
         "color": "#FF0000",
         "color_hex": "#FF0000"
       }
@@ -469,7 +448,7 @@
         "type": "Point",
         "coordinates": [
           -104.70737777251487,
-          39.68563955400579
+          39.685639554005796
         ]
       },
       "properties": {
@@ -478,7 +457,7 @@
         "city": "Aurora",
         "state": "CO",
         "zip": "80018",
-        "latitude": 39.68563955400579,
+        "latitude": 39.685639554005796,
         "longitude": -104.70737777251487,
         "color": "#BDBDBD",
         "color_hex": "#BDBDBD"
@@ -510,7 +489,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.78980422250676,
+          -104.78980422250675,
           39.723860185954656
         ]
       },
@@ -521,7 +500,7 @@
         "state": "CO",
         "zip": "80011",
         "latitude": 39.723860185954656,
-        "longitude": -104.78980422250676,
+        "longitude": -104.78980422250675,
         "color": "#FF00EF",
         "color_hex": "#FF00EF"
       }
@@ -552,6 +531,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -104.88248277970825,
+          39.5749075175367
+        ]
+      },
+      "properties": {
+        "name": "South Metro Fire Rescue Headquarters",
+        "address": "9195 E. Mineral Ave.",
+        "city": "Centennial",
+        "state": "CO",
+        "zip": "80112",
+        "latitude": 39.5749075175367,
+        "longitude": -104.88248277970825,
+        "color": "#00FFCF",
+        "color_hex": "#00FFCF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -104.96423713720502,
           39.590837240246614
         ]
@@ -573,17 +573,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.70901570770036,
-          39.59034317733333
+          -104.83927406139036,
+          39.578443638912624
         ]
       },
       "properties": {
-        "name": "Tallyns Reach Library",
+        "name": "Space & Cafe at Arapahoe Libraries",
+        "address": "12855 E. Adam Aircraft Cir.",
+        "city": "Englewood",
+        "state": "CO",
+        "zip": "80112",
+        "latitude": 39.578443638912624,
+        "longitude": -104.83927406139036,
+        "color": "#20B2AA",
+        "color_hex": "#20B2AA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.70901570770036,
+          39.590343177333324
+        ]
+      },
+      "properties": {
+        "name": "Tallyn's Reach Library",
         "address": "23911 E Arapahoe Rd",
         "city": "Aurora",
         "state": "CO",
         "zip": "80016",
-        "latitude": 39.59034317733333,
+        "latitude": 39.590343177333324,
         "longitude": -104.70901570770036,
         "color": "#FF00EF",
         "color_hex": "#FF00EF"
@@ -594,7 +615,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.83532054700969,
+          -104.83532054700967,
           39.69758355448659
         ]
       },
@@ -605,7 +626,7 @@
         "state": "CO",
         "zip": "80012",
         "latitude": 39.69758355448659,
-        "longitude": -104.83532054700969,
+        "longitude": -104.83532054700967,
         "color": "#00FF40",
         "color_hex": "#00FF40"
       }
@@ -615,7 +636,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.79561016112255,
+          -104.79561016112257,
           39.61050762501705
         ]
       },
@@ -626,7 +647,7 @@
         "state": "CO",
         "zip": "80016",
         "latitude": 39.61050762501705,
-        "longitude": -104.79561016112255,
+        "longitude": -104.79561016112257,
         "color": "#87CEEB",
         "color_hex": "#87CEEB"
       }
@@ -636,18 +657,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -104.70154232405696,
+          -104.70154232405697,
           39.72399192592024
         ]
       },
       "properties": {
-        "name": "Vista PEAK",
+        "name": "Vista PEAK Preparatory School",
         "address": "24500 E. 6th Ave",
         "city": "Aurora",
         "state": "CO",
         "zip": "80018",
         "latitude": 39.72399192592024,
-        "longitude": -104.70154232405696,
+        "longitude": -104.70154232405697,
         "color": "#FFEF00",
         "color_hex": "#FFEF00"
       }

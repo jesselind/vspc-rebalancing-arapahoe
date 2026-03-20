@@ -1,6 +1,6 @@
 # Arapahoe County VSPC Rebalancing Project
 
-A Python-based system for rebalancing voting precinct assignments to Voter Service & Polling Centers (VSPCs) in Arapahoe County, Colorado. This project optimizes voter distribution across 31 VSPCs to ensure balanced workloads while maintaining geographic proximity.
+A Python-based system for rebalancing voting precinct assignments to Voter Service & Polling Centers (VSPCs) in Arapahoe County, Colorado. This project optimizes voter distribution across 32 VSPCs to ensure balanced workloads while maintaining geographic proximity.
 
 > **Disclaimer:** This code was created with AI assistance. Python is not yet a language I know, and therefore I have not vetted it manually. Use at your own risk.
 
@@ -13,7 +13,7 @@ This project addresses a critical problem in election administration: **uneven v
 ### What does it do?
 
 The system:
-1. **Loads precinct and VSPC data** from master files (403 precincts, 31 VSPCs)
+1. **Loads precinct and VSPC data** from master files (403 precincts, 32 VSPCs)
 2. **Calculates geographic assignments** (finds nearest VSPC for each precinct)
 3. **Rebalances assignments** using algorithms that prioritize voter volume over precinct count
 4. **Generates output files** with detailed assignment information, distances, and statistics
@@ -62,7 +62,7 @@ python generate_assignments.py
 
 This will create output files in the `output/` directory:
 - `VSPC - Precinct Distribution.csv` - One row per precinct (403 rows)
-- `VSPC Locations.csv` - One row per VSPC (31 rows)
+- `VSPC Locations.csv` - One row per VSPC (32 rows)
 - `Summary Statistics.csv` - Overall statistics
 
 ### Data Files
@@ -70,7 +70,7 @@ This will create output files in the `output/` directory:
 The system uses master files as the source of truth:
 
 - **`master_precincts.csv`** - All 403 precincts with coordinates, voter counts, and district info
-- **`master_vspcs.csv`** - All 31 VSPCs with addresses and coordinates
+- **`master_vspcs.csv`** - All 32 VSPCs with addresses and coordinates
 - **`CE-VR011B_EXTERNAL_20260113_021047_03.txt`** - Current voter registration data (January 2026)
 
 > **Note:** All voter data used in this project is publicly available from the Arapahoe County Elections Department. The voter registration file and other voter lists can be downloaded from the [Arapahoe County Voter Lists page](https://www.arapahoeco.gov/your_county/arapahoevotes/records_data/voter_lists.php). All information contained in these lists is considered public under state law.
@@ -115,8 +115,8 @@ CEI/
 **Current Algorithm**: Ripple/cascade rebalancing (voter volume focused)
 
 - **Total Precincts**: 403
-- **Total VSPCs**: 31
-- **Target**: ~13,000 voters per VSPC (±25% tolerance)
+- **Total VSPCs**: 32
+- **Target**: ~13,100 voters per VSPC (±25% tolerance)
 - **Algorithm**: Based on v14 (see version history in `VSPC_REBALANCING_CONTEXT.md`)
 
 See `VSPC_REBALANCING_CONTEXT.md` for detailed statistics and version history.
@@ -157,7 +157,7 @@ One row per precinct (403 rows) with:
 
 ### VSPC Locations.csv
 
-One row per VSPC (31 rows) with:
+One row per VSPC (32 rows) with:
 - VSPC name
 - Total voters assigned
 - Total precincts assigned
@@ -167,7 +167,7 @@ One row per VSPC (31 rows) with:
 
 ### DC Assignment Verification.csv
 
-One row per VSPC (31 rows) with:
+One row per VSPC (32 rows) with:
 - VSPC name
 - Primary Captain District and percentage of that DC's precincts at the VSPC
 - Secondary Captain District and percentage of that DC's precincts at the VSPC

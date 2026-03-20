@@ -198,20 +198,19 @@ MANUAL_COLOR_OVERRIDES = {
     "Arapahoe County Fairgrounds": "#FFFFFF",  # White
     "Arapahoe County Lima Plaza": "#FFEF00",
     "Aurora Center for Active Adults": "#FFFF00",  # Yellow
-    "Aurora Public Schools Educational Service Center 4": "#355E3B",  # Hunter/forest green
-    "Aurora Public Schools Professional Learning & Conference Center": "#9E9E9E",
-    "Beck Recreation Center": "#00FFCF",
+    "Aurora Public Schools - Educational Service Center 4": "#355E3B",  # Hunter/forest green
+    "Aurora Public Schools - Professional Learning and Conference Center": "#9E9E9E",
     "Bemis Public Library": "#20FF00",
     "Central Recreation Center": "#000000",
-    "Cherry Creek School District Instructional Support Facility": "#00FF10",
+    "Cherry Creek School District - Instructional Support Facility": "#00FF10",
     "City of Aurora Municipal Center": "#FF6600",  # Bright orange
     "City of Glendale Municipal Building": "#424242",
     "City of Sheridan Municipal Building": "#000000",  # Black
-    "Community College of Aurora CentreTech Campus": "#F5F5F5",
+    "Community College of Aurora - CentreTech Campus": "#F5F5F5",
     "Cook Park Recreation Center": "#E2C3EC",  # Medium lavender (between light and plum)
     "Englewood Civic Center": "#FFFFFF",
     "Greenwood Village City Hall": "#DF00FF",
-    "Heather Gardens": "#FF3000",
+    "Heather Gardens Clubhouse": "#FF3000",
     "Kelver Library": "#00FF70",
     "Martin Luther King, Jr. Library": "#FF0000",
     "Mission Viejo Library": "#FFFFFF",
@@ -219,11 +218,13 @@ MANUAL_COLOR_OVERRIDES = {
     "Parkside Village Retirement Resort": "#5000FF",
     "Pickens Technical College": "#FF00EF",
     "Smoky Hill Library": "#FFA500",  # Light orange
+    "South Metro Fire Rescue Headquarters": "#00FFCF",
     "Southglenn Library": "#66B3FF",  # Light blue
-    "Tallyns Reach Library": "#FF00EF",
+    "Space & Cafe at Arapahoe Libraries": "#20B2AA",
+    "Tallyn's Reach Library": "#FF00EF",
     "The Avenue Church": "#00FF40",
     "Trails Recreation Center": "#87CEEB",  # Light blue (sky blue)
-    "Vista PEAK": "#FFEF00"
+    "Vista PEAK Preparatory School": "#FFEF00"
 }
 
 
