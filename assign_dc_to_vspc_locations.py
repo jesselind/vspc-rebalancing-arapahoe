@@ -11,6 +11,8 @@ from pathlib import Path
 from collections import defaultdict
 from math import radians, cos, sin, asin, sqrt
 
+from dc_precinct_merge import prepare_precinct_dist_for_dc
+
 # File paths
 WORKSPACE_ROOT = Path(__file__).parent
 DC_GROUPING_FILE = WORKSPACE_ROOT / "DC-PL-grouping.csv"
@@ -18,6 +20,13 @@ PRECINCT_DISTRIBUTION_FILE = WORKSPACE_ROOT / "output" / "VSPC - Precinct Distri
 VSPC_LOCATIONS_FILE = WORKSPACE_ROOT / "output" / "VSPC Locations.csv"
 MASTER_PRECINCTS_FILE = WORKSPACE_ROOT / "master_precincts.csv"
 MASTER_VSPCS_FILE = WORKSPACE_ROOT / "master_vspcs.csv"
+
+def _first_existing_column(df, candidates):
+    """Return first matching column name from candidates, else None."""
+    for col in candidates:
+        if col in df.columns:
+            return col
+    return None
 
 def haversine(lon1, lat1, lon2, lat2):
     """Calculate distance between two lat/lon points in kilometers."""
@@ -55,12 +64,12 @@ def main():
     for dc in sorted(dc_total_counts.keys()):
         print(f"   DC {dc}: {dc_total_counts[dc]} total precincts")
     
-    # Step 2: Load VSPC - Precinct Distribution.csv
+    # Step 2: Load VSPC - Precinct Distribution.csv (DC merged in memory only; not written to CSV)
     print("\n2. Loading VSPC - Precinct Distribution.csv...")
     precinct_dist = pd.read_csv(PRECINCT_DISTRIBUTION_FILE)
     print(f"   Loaded {len(precinct_dist)} precinct rows")
-    
-    # Filter out rows without DC assignment
+    precinct_dist = prepare_precinct_dist_for_dc(precinct_dist, dc_grouping)
+
     precinct_dist_with_dc = precinct_dist[precinct_dist['Primary Captain District'].notna()]
     print(f"   Rows with DC assignment: {len(precinct_dist_with_dc)}")
     
@@ -210,9 +219,15 @@ def main():
     # Step 9: Load VSPC Locations.csv and update Primary Captain District column
     print("\n9. Updating VSPC Locations.csv...")
     vspc_locations = pd.read_csv(VSPC_LOCATIONS_FILE)
+    vspc_col = _first_existing_column(vspc_locations, ['VSPC', 'Assigned VSPC'])
+    if vspc_col is None:
+        raise KeyError(
+            "Missing VSPC name column in VSPC Locations file. "
+            "Expected one of: 'VSPC', 'Assigned VSPC'."
+        )
     
     # Update Primary Captain District column
-    vspc_locations['Primary Captain District'] = vspc_locations['VSPC'].map(vspc_to_dc).astype('Int64')
+    vspc_locations['Primary Captain District'] = vspc_locations[vspc_col].map(vspc_to_dc).astype('Int64')
     
     # Count assignments
     assigned_count = vspc_locations['Primary Captain District'].notna().sum()
@@ -223,7 +238,7 @@ def main():
     if len(unassigned) > 0:
         print(f"\n   Unassigned VSPCs ({len(unassigned)}):")
         for _, row in unassigned.iterrows():
-            print(f"     - {row['VSPC']}")
+            print(f"     - {row[vspc_col]}")
     
     # Step 10: Save updated file
     print("\n10. Saving updated VSPC Locations.csv...")

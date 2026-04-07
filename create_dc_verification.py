@@ -7,12 +7,21 @@ import pandas as pd
 from pathlib import Path
 from collections import defaultdict
 
+from dc_precinct_merge import prepare_precinct_dist_for_dc
+
 # File paths
 WORKSPACE_ROOT = Path(__file__).parent
 DC_GROUPING_FILE = WORKSPACE_ROOT / "DC-PL-grouping.csv"
 PRECINCT_DISTRIBUTION_FILE = WORKSPACE_ROOT / "output" / "VSPC - Precinct Distribution.csv"
 VSPC_LOCATIONS_FILE = WORKSPACE_ROOT / "output" / "VSPC Locations.csv"
 OUTPUT_FILE = WORKSPACE_ROOT / "output" / "DC Assignment Verification.csv"
+
+def _first_existing_column(df, candidates):
+    """Return first matching column name from candidates, else None."""
+    for col in candidates:
+        if col in df.columns:
+            return col
+    return None
 
 def main():
     print("="*60)
@@ -37,9 +46,10 @@ def main():
     # Convert to counts
     dc_total_counts = {dc: len(precincts) for dc, precincts in dc_total_precincts.items()}
     
-    # Step 2: Load VSPC - Precinct Distribution.csv
+    # Step 2: Load VSPC - Precinct Distribution.csv (DC merged in memory only)
     print("\n2. Loading VSPC - Precinct Distribution.csv...")
     precinct_dist = pd.read_csv(PRECINCT_DISTRIBUTION_FILE)
+    precinct_dist = prepare_precinct_dist_for_dc(precinct_dist, dc_grouping)
     precinct_dist_with_dc = precinct_dist[precinct_dist['Primary Captain District'].notna()]
     
     # Step 3: Calculate percentage of precincts per DC per VSPC
@@ -58,15 +68,27 @@ def main():
     # Step 4: Load VSPC Locations.csv
     print("\n4. Loading VSPC Locations.csv...")
     vspc_locations = pd.read_csv(VSPC_LOCATIONS_FILE)
+    vspc_col = _first_existing_column(vspc_locations, ['VSPC', 'Assigned VSPC'])
+    if vspc_col is None:
+        raise KeyError(
+            "Missing VSPC name column in VSPC Locations file. "
+            "Expected one of: 'VSPC', 'Assigned VSPC'."
+        )
+    primary_dc_col = _first_existing_column(vspc_locations, ['Primary Captain District'])
+    secondary_dc_col = _first_existing_column(vspc_locations, ['Secondary Captain District'])
+    if primary_dc_col is None:
+        print("   ⚠️  Primary Captain District column not found in VSPC Locations; leaving blank in verification output.")
+    if secondary_dc_col is None:
+        print("   ⚠️  Secondary Captain District column not found in VSPC Locations; leaving blank in verification output.")
     
     # Step 5: Create verification data
     print("\n5. Creating verification data...")
     verification_data = []
     
     for _, row in vspc_locations.iterrows():
-        vspc = row['VSPC']
-        primary_dc = row['Primary Captain District']
-        secondary_dc = row['Secondary Captain District'] if 'Secondary Captain District' in row else None
+        vspc = row[vspc_col]
+        primary_dc = row[primary_dc_col] if primary_dc_col is not None else None
+        secondary_dc = row[secondary_dc_col] if secondary_dc_col is not None else None
         
         # Get percentages
         primary_pct = None

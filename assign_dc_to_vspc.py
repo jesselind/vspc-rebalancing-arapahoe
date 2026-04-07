@@ -15,6 +15,13 @@ DC_GROUPING_FILE = WORKSPACE_ROOT / "DC-PL-grouping.csv"
 PRECINCT_DISTRIBUTION_FILE = WORKSPACE_ROOT / "output" / "VSPC - Precinct Distribution.csv"
 VSPC_LOCATIONS_FILE = WORKSPACE_ROOT / "output" / "VSPC Locations.csv"
 
+def _first_existing_column(df, candidates):
+    """Return first matching column name from candidates, else None."""
+    for col in candidates:
+        if col in df.columns:
+            return col
+    return None
+
 def main():
     print("="*60)
     print("ASSIGNING DISTRICT CAPTAINS TO VSPCs")
@@ -97,12 +104,18 @@ def main():
     # Step 5: Load VSPC Locations.csv and update Primary Captain District column
     print("\n5. Updating VSPC Locations.csv...")
     vspc_locations = pd.read_csv(VSPC_LOCATIONS_FILE)
+    vspc_col = _first_existing_column(vspc_locations, ['VSPC', 'Assigned VSPC'])
+    if vspc_col is None:
+        raise KeyError(
+            "Missing VSPC name column in VSPC Locations file. "
+            "Expected one of: 'VSPC', 'Assigned VSPC'."
+        )
     
     # Create reverse mapping: VSPC name -> DC
     vspc_to_dc = {vspc: dc for dc, vspc in dc_to_vspc.items()}
     
     # Update Primary Captain District column
-    vspc_locations['Primary Captain District'] = vspc_locations['VSPC'].map(vspc_to_dc)
+    vspc_locations['Primary Captain District'] = vspc_locations[vspc_col].map(vspc_to_dc)
     
     # Count assignments
     assigned_count = vspc_locations['Primary Captain District'].notna().sum()
@@ -113,7 +126,7 @@ def main():
     if len(unassigned) > 0:
         print(f"\n   Unassigned VSPCs ({len(unassigned)}):")
         for _, row in unassigned.iterrows():
-            print(f"     - {row['VSPC']}")
+            print(f"     - {row[vspc_col]}")
     
     # Step 6: Save updated file
     print("\n6. Saving updated VSPC Locations.csv...")

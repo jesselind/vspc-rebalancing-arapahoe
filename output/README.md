@@ -9,8 +9,8 @@ When you run `generate_assignments.py`, it creates three CSV files:
 1. **`VSPC - Precinct Distribution.csv`**
    - One row per precinct (403 rows)
    - Shows nearest VSPC, assigned VSPC, distances, reassignment status
-   - Includes voter counts and VSPC address information
-   - **NEW**: Includes "Primary Captain District" column showing which District Captain (DC) has jurisdiction over each precinct
+   - Includes voter counts, **Precinct Coordinators** (from `number-coordinators.csv`), and VSPC address information
+   - Does **not** include Primary Captain District; DC scripts merge that from `DC-PL-grouping.csv` in memory when needed
 
 2. **`VSPC Locations.csv`**
    - One row per VSPC (32 rows)

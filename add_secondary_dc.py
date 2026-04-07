@@ -9,11 +9,20 @@ import pandas as pd
 from pathlib import Path
 from collections import defaultdict
 
+from dc_precinct_merge import prepare_precinct_dist_for_dc
+
 # File paths
 WORKSPACE_ROOT = Path(__file__).parent
 DC_GROUPING_FILE = WORKSPACE_ROOT / "DC-PL-grouping.csv"
 PRECINCT_DISTRIBUTION_FILE = WORKSPACE_ROOT / "output" / "VSPC - Precinct Distribution.csv"
 VSPC_LOCATIONS_FILE = WORKSPACE_ROOT / "output" / "VSPC Locations.csv"
+
+def _first_existing_column(df, candidates):
+    """Return first matching column name from candidates, else None."""
+    for col in candidates:
+        if col in df.columns:
+            return col
+    return None
 
 def main():
     print("="*60)
@@ -42,9 +51,10 @@ def main():
     # Convert to counts
     dc_total_counts = {dc: len(precincts) for dc, precincts in dc_total_precincts.items()}
     
-    # Step 2: Load VSPC - Precinct Distribution.csv
+    # Step 2: Load VSPC - Precinct Distribution.csv (DC merged in memory only)
     print("\n2. Loading VSPC - Precinct Distribution.csv...")
     precinct_dist = pd.read_csv(PRECINCT_DISTRIBUTION_FILE)
+    precinct_dist = prepare_precinct_dist_for_dc(precinct_dist, dc_grouping)
     precinct_dist_with_dc = precinct_dist[precinct_dist['Primary Captain District'].notna()]
     
     # Step 3: Calculate percentage of precincts per DC per VSPC (only for unassigned DCs)
@@ -120,6 +130,12 @@ def main():
     # Step 5: Load VSPC Locations.csv and add/update Secondary Captain District column
     print("\n5. Adding/updating Secondary Captain District column to VSPC Locations.csv...")
     vspc_locations = pd.read_csv(VSPC_LOCATIONS_FILE)
+    vspc_col = _first_existing_column(vspc_locations, ['VSPC', 'Assigned VSPC'])
+    if vspc_col is None:
+        raise KeyError(
+            "Missing VSPC name column in VSPC Locations file. "
+            "Expected one of: 'VSPC', 'Assigned VSPC'."
+        )
     
     # Find the index of Primary Captain District column
     primary_col_idx = vspc_locations.columns.get_loc('Primary Captain District')
@@ -127,7 +143,7 @@ def main():
     # Check if Secondary Captain District column already exists
     if 'Secondary Captain District' in vspc_locations.columns:
         # Update existing column
-        vspc_locations['Secondary Captain District'] = vspc_locations['VSPC'].map(vspc_to_dc).astype('Int64')
+        vspc_locations['Secondary Captain District'] = vspc_locations[vspc_col].map(vspc_to_dc).astype('Int64')
         # Reorder to put it right after Primary Captain District
         cols = list(vspc_locations.columns)
         cols.remove('Secondary Captain District')
@@ -135,7 +151,7 @@ def main():
         vspc_locations = vspc_locations[cols]
     else:
         # Insert new column right after Primary Captain District
-        secondary_dcs = vspc_locations['VSPC'].map(vspc_to_dc).astype('Int64')
+        secondary_dcs = vspc_locations[vspc_col].map(vspc_to_dc).astype('Int64')
         vspc_locations.insert(primary_col_idx + 1, 'Secondary Captain District', secondary_dcs)
     
     # Count assignments

@@ -72,6 +72,7 @@ The system uses master files as the source of truth:
 - **`master_precincts.csv`** - All 403 precincts with coordinates, voter counts, and district info
 - **`master_vspcs.csv`** - All 32 VSPCs with addresses and coordinates
 - **`CE-VR011B_EXTERNAL_20260113_021047_03.txt`** - Current voter registration data (January 2026)
+- **`number-coordinators.csv`** - Required for `generate_assignments.py`: columns `Precinct` and `Number of PCs` (merged into `VSPC - Precinct Distribution.csv` as **`Precinct Coordinators`**)
 
 > **Note:** All voter data used in this project is publicly available from the Arapahoe County Elections Department. The voter registration file and other voter lists can be downloaded from the [Arapahoe County Voter Lists page](https://www.arapahoeco.gov/your_county/arapahoevotes/records_data/voter_lists.php). All information contained in these lists is considered public under state law.
 
@@ -85,6 +86,7 @@ CEI/
 ├── generate_assignments.py           # CURRENT: Main script to generate assignments
 ├── master_precincts.csv              # Master precinct data (source of truth)
 ├── master_vspcs.csv                  # Master VSPC data (source of truth)
+├── number-coordinators.csv           # Precinct coordinator counts (input for Precinct Coordinators column)
 │
 ├── output/                            # CURRENT: Output files (CSV results)
 │   ├── VSPC - Precinct Distribution.csv
@@ -148,6 +150,7 @@ The current algorithm (based on v14, which evolved from v11 ripple/cascade):
 
 One row per precinct (403 rows) with:
 - Precinct number and voter count
+- **Precinct Coordinators** (count per precinct; from `number-coordinators.csv`)
 - **Nearest VSPC** (geographic baseline) and distance
 - **Assigned VSPC** (rebalanced assignment) and distance
 - Distance difference (impact of rebalancing)

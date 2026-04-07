@@ -22,6 +22,10 @@ OUTPUT_DIR = WORKSPACE_ROOT / "output"
 MASTER_PRECINCTS_FILE = WORKSPACE_ROOT / "master_precincts.csv"
 MASTER_VSPCS_FILE = WORKSPACE_ROOT / "master_vspcs.csv"
 VOTER_REGISTRATION_FILE = WORKSPACE_ROOT / "CE-VR011B_EXTERNAL_20260113_021047_03.txt"
+# Precinct coordinator counts (3-digit precinct, quantity). Required for VSPC - Precinct Distribution.csv.
+NUMBER_COORDINATORS_FILE = WORKSPACE_ROOT / "number-coordinators.csv"
+# Output column name in VSPC - Precinct Distribution.csv (merged from number-coordinators.csv).
+PRECINCT_COORDINATORS_COLUMN = "Precinct Coordinators"
 
 # Rebalancing parameters - Ripple/Cascade approach (Voter Volume Focused)
 TARGET_TOLERANCE = 0.25  # 25% tolerance for voter volume
@@ -51,6 +55,51 @@ def find_vspc_distances(precinct_row, vspc_dict):
     
     distances.sort(key=lambda x: x[1])
     return distances
+
+
+def load_precinct_pc_counts():
+    """
+    Load precinct coordinator counts from number-coordinators.csv.
+    Returns dict: 3-digit precinct string -> count string (empty if none).
+    """
+    if not NUMBER_COORDINATORS_FILE.exists():
+        raise FileNotFoundError(
+            f"Required file not found: {NUMBER_COORDINATORS_FILE}\n"
+            "Add number-coordinators.csv to the project root with columns "
+            "'Precinct' and 'Number of PCs'."
+        )
+    df = pd.read_csv(NUMBER_COORDINATORS_FILE, encoding="utf-8-sig")
+    if "Precinct" not in df.columns or "Number of PCs" not in df.columns:
+        raise ValueError(
+            f"{NUMBER_COORDINATORS_FILE.name} must include columns 'Precinct' and 'Number of PCs'. "
+            f"Found: {list(df.columns)}"
+        )
+    df = df[["Precinct", "Number of PCs"]].copy()
+
+    def precinct_key(v):
+        if pd.isna(v) or (isinstance(v, str) and not str(v).strip()):
+            return None
+        try:
+            return str(int(float(v)))
+        except (ValueError, TypeError):
+            s = str(v).strip()
+            return s if s else None
+
+    def pc_value(v):
+        if pd.isna(v) or (isinstance(v, str) and not str(v).strip()):
+            return ""
+        try:
+            return str(int(float(v)))
+        except (ValueError, TypeError):
+            return str(v).strip()
+
+    out = {}
+    for _, row in df.iterrows():
+        k = precinct_key(row["Precinct"])
+        if k is None:
+            continue
+        out[k] = pc_value(row["Number of PCs"])
+    return out
 
 
 def load_voter_registration_data():
@@ -514,10 +563,16 @@ def generate_assignments():
     vspc_totals.columns = ['Assigned VSPC', 'Voters Assigned', 'Precincts Assigned']
     
     precinct_dist = precinct_dist.merge(vspc_totals, on='Assigned VSPC')
+
+    print(f"  Merging precinct coordinator counts ({PRECINCT_COORDINATORS_COLUMN})...")
+    pc_map = load_precinct_pc_counts()
+    precinct_dist[PRECINCT_COORDINATORS_COLUMN] = (
+        precinct_dist['Precinct'].astype(int).astype(str).map(pc_map).fillna('')
+    )
     
     # Reorder columns
     column_order = [
-        'Precinct', 'Voters', 'Nearest VSPC', 'Distance to Nearest VSPC (mi.)',
+        'Precinct', 'Voters', PRECINCT_COORDINATORS_COLUMN, 'Nearest VSPC', 'Distance to Nearest VSPC (mi.)',
         'Assigned VSPC', 'Distance to Assigned VSPC (mi.)', 'Distance Difference (mi.)',
         'Reassigned', 'Voters Assigned', 'Precincts Assigned', 'Address', 'City', 'State', 'Zip', 'Precinct Map URL'
     ]
