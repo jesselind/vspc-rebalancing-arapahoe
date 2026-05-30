@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 /** Block legacy direct static paths; assets are served only via rate-limited API routes. */
-const BLOCKED_PREFIXES = ["/data/", "/maps/", "/cei-map.pdf"];
+const BLOCKED_PREFIXES = ["/data/", "/maps/"];
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -15,5 +15,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/data/:path*", "/maps/:path*", "/cei-map.pdf"],
+  matcher: ["/data/:path*", "/maps/:path*"],
 };

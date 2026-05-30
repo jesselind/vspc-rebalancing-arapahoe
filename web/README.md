@@ -57,7 +57,7 @@ npm run test:e2e
   - `RATE_LIMIT_DOWNLOAD_MAX` (default `30`)
   - `RATE_LIMIT_FEEDBACK_MAX` (default `8`)
 - On Cloudflare, add WAF rate limiting on `/api/download` and `/api/feedback` as defense in depth
-- PDF viewer loads the map only from `/api/download?asset=map`
+- County map PDF opens from GitHub (`lib/map-pdf-url.ts`), not through the Worker
 - Do not commit `.dev.vars` or API tokens; set runtime env in the dashboard only if needed
 
 ## Deploy on Cloudflare Workers

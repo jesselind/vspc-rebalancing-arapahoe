@@ -34,24 +34,10 @@ test("renders csv tabs and download links", async ({ page }) => {
   );
 });
 
-test("shows map viewer state", async ({ page }) => {
+test("links to county map PDF on GitHub", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "County map (PDF)" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Email support" })).toBeVisible();
-
-  // PDF loading text is transient on fast machines, so accept either state:
-  // still loading OR already loaded with viewer actions visible.
-  const loadingText = page.getByText("Loading map PDF...");
-  const openInNewTab = page.getByRole("link", { name: "Open in new tab" });
-
-  await expect
-    .poll(
-      async () => {
-        const loadingVisible = await loadingText.isVisible().catch(() => false);
-        const loadedVisible = await openInNewTab.isVisible().catch(() => false);
-        return loadingVisible || loadedVisible;
-      },
-      { timeout: 5000 },
-    )
-    .toBe(true);
+  const mapLink = page.getByRole("link", { name: "Open county map (PDF)" });
+  await expect(mapLink).toHaveAttribute("href", /raw\.githubusercontent\.com/);
+  await expect(mapLink).toHaveAttribute("target", "_blank");
 });

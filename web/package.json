@@ -7,7 +7,7 @@
     "dev": "next dev",
     "prebuild": "npm run sync:assets && node tools/generate-home-data.mjs",
     "build": "next build",
-    "build:cf": "opennextjs-cloudflare build && node tools/stage-map-asset.mjs",
+    "build:cf": "opennextjs-cloudflare build",
     "start": "next start",
     "lint": "eslint",
     "test:e2e": "playwright test"

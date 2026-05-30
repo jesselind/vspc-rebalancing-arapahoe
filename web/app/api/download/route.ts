@@ -1,22 +1,7 @@
 import { NextResponse } from "next/server";
 import { csvFileContents } from "@/lib/generated/home-data";
-import {
-  ALLOWED_CSV_FILES,
-  MAP_ASSET_ID,
-  MAP_FILE_NAME,
-} from "@/lib/downloads";
-import { fetchMapPdfFromAssets, loadMapPdfBytes } from "@/lib/map-pdf";
+import { ALLOWED_CSV_FILES } from "@/lib/downloads";
 import { clientIp, enforceRateLimit, rateLimitHeaders } from "@/lib/rate-limit";
-
-const MIME_BY_EXT: Record<string, string> = {
-  ".csv": "text/csv; charset=utf-8",
-  ".pdf": "application/pdf",
-};
-
-function mimeFor(fileName: string): string {
-  const ext = fileName.slice(fileName.lastIndexOf(".")).toLowerCase();
-  return MIME_BY_EXT[ext] ?? "application/octet-stream";
-}
 
 export async function GET(request: Request) {
   const limit = Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "30");
@@ -29,48 +14,32 @@ export async function GET(request: Request) {
   }
 
   const url = new URL(request.url);
-  const asset = url.searchParams.get("asset");
   const file = url.searchParams.get("file");
   const asAttachment = url.searchParams.get("disposition") === "attachment";
 
-  const fileName = asset === MAP_ASSET_ID ? MAP_FILE_NAME : (file ?? "download");
+  if (!file || !ALLOWED_CSV_FILES.has(file)) {
+    return NextResponse.json({ error: "Missing or disallowed file parameter." }, { status: 400 });
+  }
 
-  const headers = new Headers(rateLimitHeaders(rate, limit));
-  headers.set("Content-Type", mimeFor(fileName));
-  headers.set("X-Content-Type-Options", "nosniff");
-  headers.set("Cache-Control", "private, no-store");
-  if (asAttachment) {
-    headers.set("Content-Disposition", `attachment; filename="${fileName.replace(/"/g, "")}"`);
-  } else {
-    headers.set("Content-Disposition", "inline");
+  const raw = csvFileContents[file];
+  if (!raw) {
+    return NextResponse.json({ error: "File not found." }, { status: 404 });
   }
 
   try {
-    if (asset === MAP_ASSET_ID) {
-      const assetResponse = await fetchMapPdfFromAssets();
-      if (assetResponse?.body) {
-        const contentLength = assetResponse.headers.get("content-length");
-        if (contentLength) {
-          headers.set("Content-Length", contentLength);
-        }
-        return new NextResponse(assetResponse.body, { status: 200, headers });
-      }
-
-      const bytes = await loadMapPdfBytes();
-      return new NextResponse(Buffer.from(bytes), { status: 200, headers });
+    const headers = new Headers(rateLimitHeaders(rate, limit));
+    headers.set("Content-Type", "text/csv; charset=utf-8");
+    headers.set("X-Content-Type-Options", "nosniff");
+    headers.set("Cache-Control", "private, no-store");
+    if (asAttachment) {
+      headers.set("Content-Disposition", `attachment; filename="${file.replace(/"/g, "")}"`);
+    } else {
+      headers.set("Content-Disposition", "inline");
     }
 
-    if (file && ALLOWED_CSV_FILES.has(file)) {
-      const raw = csvFileContents[file];
-      if (!raw) {
-        return NextResponse.json({ error: "File not found." }, { status: 404 });
-      }
-      return new NextResponse(new TextEncoder().encode(raw), { status: 200, headers });
-    }
-
-    return NextResponse.json({ error: "Missing file or asset parameter." }, { status: 400 });
+    return new NextResponse(new TextEncoder().encode(raw), { status: 200, headers });
   } catch {
-    console.error(`Download failed for ${fileName} (${clientIp(request)})`);
+    console.error(`Download failed for ${file} (${clientIp(request)})`);
     return NextResponse.json({ error: "File not found." }, { status: 404 });
   }
 }
