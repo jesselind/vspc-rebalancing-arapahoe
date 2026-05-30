@@ -2,6 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // Must match the Worker name in the Cloudflare dashboard (not package.json "name").
   "name": "cei",
+  "preview_urls": false,
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-05-30",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
