@@ -23,6 +23,9 @@
 # cloudflare local
 .dev.vars
 
+# built from content/data at prebuild
+/lib/generated/
+
 # production
 /build
 

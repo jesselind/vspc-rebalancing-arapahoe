@@ -5,7 +5,7 @@
   "scripts": {
     "sync:assets": "node tools/sync-static-assets.mjs",
     "dev": "next dev",
-    "prebuild": "npm run sync:assets",
+    "prebuild": "npm run sync:assets && node tools/generate-home-data.mjs",
     "build": "next build",
     "build:cf": "opennextjs-cloudflare build",
     "start": "next start",

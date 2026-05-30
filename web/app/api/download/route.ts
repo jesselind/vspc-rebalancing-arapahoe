@@ -1,9 +1,10 @@
 import { readFile } from "node:fs/promises";
 import { NextResponse } from "next/server";
+import { csvFileContents } from "@/lib/generated/home-data";
 import {
+  ALLOWED_CSV_FILES,
   MAP_ASSET_ID,
   MAP_FILE_NAME,
-  resolveCsvDownloadPath,
   resolveMapDownloadPath,
 } from "@/lib/downloads";
 import { clientIp, enforceRateLimit, rateLimitHeaders } from "@/lib/rate-limit";
@@ -33,25 +34,21 @@ export async function GET(request: Request) {
   const file = url.searchParams.get("file");
   const asAttachment = url.searchParams.get("disposition") === "attachment";
 
-  let filePath: string | null = null;
-  let fileName: string;
-
-  if (asset === MAP_ASSET_ID) {
-    filePath = resolveMapDownloadPath();
-    fileName = MAP_FILE_NAME;
-  } else if (file) {
-    filePath = resolveCsvDownloadPath(file);
-    fileName = file;
-  } else {
-    return NextResponse.json({ error: "Missing file or asset parameter." }, { status: 400 });
-  }
-
-  if (!filePath) {
-    return NextResponse.json({ error: "File not allowed." }, { status: 400 });
-  }
+  const fileName = asset === MAP_ASSET_ID ? MAP_FILE_NAME : (file ?? "download");
+  let bytes: Buffer;
 
   try {
-    const bytes = await readFile(filePath);
+    if (asset === MAP_ASSET_ID) {
+      bytes = await readFile(resolveMapDownloadPath());
+    } else if (file && ALLOWED_CSV_FILES.has(file)) {
+      const raw = csvFileContents[file];
+      if (!raw) {
+        return NextResponse.json({ error: "File not found." }, { status: 404 });
+      }
+      bytes = Buffer.from(raw, "utf8");
+    } else {
+      return NextResponse.json({ error: "Missing file or asset parameter." }, { status: 400 });
+    }
     const headers = new Headers(rateLimitHeaders(rate, limit));
     headers.set("Content-Type", mimeFor(fileName));
     headers.set("X-Content-Type-Options", "nosniff");
@@ -62,7 +59,7 @@ export async function GET(request: Request) {
       headers.set("Content-Disposition", "inline");
     }
 
-    return new NextResponse(bytes, { status: 200, headers });
+    return new NextResponse(new Uint8Array(bytes), { status: 200, headers });
   } catch {
     console.error(`Download failed for ${fileName} (${clientIp(request)})`);
     return NextResponse.json({ error: "File not found." }, { status: 404 });

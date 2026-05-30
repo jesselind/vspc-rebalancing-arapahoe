@@ -17,5 +17,12 @@
   ],
   "observability": {
     "enabled": true
-  }
+  },
+  "rules": [
+    {
+      "type": "Data",
+      "globs": ["content/maps/*.pdf"],
+      "fallthrough": true
+    }
+  ]
 }

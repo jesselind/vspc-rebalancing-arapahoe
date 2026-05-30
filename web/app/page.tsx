@@ -21,14 +21,9 @@ export default async function Home() {
         <main className="mx-auto max-w-3xl rounded-xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
           <h1 className="text-2xl font-semibold text-amber-950">Data not prepared yet</h1>
           <p className="mt-2 text-sm text-amber-900">
-            Run the asset sync script before starting the app so CSV and PDF files are available in
-            the content folder.
-          </p>
-          <pre className="mt-4 overflow-x-auto rounded-lg bg-amber-100 p-3 text-xs text-amber-950">
-            node tools/sync-static-assets.mjs
-          </pre>
-          <p className="mt-4 text-sm text-amber-900">
-            Then refresh this page. See the project README for setup details.
+            The server could not load CSV data from the deployed bundle. For local dev, run{" "}
+            <code className="rounded bg-amber-100 px-1">npm run sync:assets</code> in{" "}
+            <code className="rounded bg-amber-100 px-1">web/</code>, then rebuild and redeploy.
           </p>
         </main>
       </div>
