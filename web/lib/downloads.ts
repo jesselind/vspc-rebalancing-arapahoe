@@ -45,6 +45,9 @@ export const ALLOWED_CSV_FILES = new Set([
 
 export const MAP_FILE_NAME = "full-county-1_50000.pdf";
 
+/** Filename under .open-next/assets (served via ASSETS binding on Cloudflare). */
+export const MAP_ASSET_PATH = "cei-map.pdf";
+
 export function resolveCsvDownloadPath(fileName: string): string | null {
   if (!ALLOWED_CSV_FILES.has(fileName)) {
     return null;
