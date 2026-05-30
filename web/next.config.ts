@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1", "localhost"],
+  // Bundle content/ for Workers: CSV/PDF are read via fs at runtime (not in public/).
+  outputFileTracingIncludes: {
+    "*": ["./content/**/*"],
+  },
   async headers() {
     return [
       {
