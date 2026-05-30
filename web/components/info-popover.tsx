@@ -74,9 +74,11 @@ export function InfoPopover({ label, children }: Props) {
     }
 
     function closeOnPointerDown(event: MouseEvent) {
-      if (!containerRef.current?.contains(event.target as Node)) {
-        setOpen(false);
+      const target = event.target as Node;
+      if (containerRef.current?.contains(target) || panelRef.current?.contains(target)) {
+        return;
       }
+      setOpen(false);
     }
 
     function closeOnEscape(event: KeyboardEvent) {

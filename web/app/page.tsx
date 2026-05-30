@@ -52,7 +52,7 @@ export default async function Home() {
         </main>
 
         <footer className="bg-zinc-50 px-4 py-5 md:px-6">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 text-center">
+          <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
             <p className="text-sm text-zinc-600">Questions or incorrect data?</p>
             <FeedbackButton />
           </div>

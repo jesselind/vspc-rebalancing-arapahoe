@@ -4,9 +4,12 @@ import { useMemo, useState } from "react";
 import { InfoPopover } from "@/components/info-popover";
 import { MagnifyingGlassIcon, MapPinIcon, XMarkIcon } from "@/components/icons";
 import { Button, PageSection } from "@/components/ui/button";
-import { ARAPAHOE_VOTER_LOOKUP_URL } from "@/lib/county-links";
+import { ARAPAHOE_VOTER_LOOKUP_URL, ARAPAHOE_VSPC_URL } from "@/lib/county-links";
 import { formatFullAddress, googleMapsSearchUrl } from "@/lib/maps";
 import type { PrecinctAssignment } from "@/lib/types";
+
+const countyLinkClass =
+  "font-medium text-blue-700 underline decoration-blue-400 underline-offset-2 hover:text-blue-900";
 
 type Props = {
   assignments: PrecinctAssignment[];
@@ -32,37 +35,54 @@ export function PrecinctLookup({ assignments }: Props) {
 
   return (
     <PageSection
-      title="Find your assigned VSPC"
+      title="Find your assigned voting location"
+      titleAccessory={
+        <InfoPopover label="Official county VSPC locations and hours">
+          <p>
+            For official county VSPC locations, hours, and services, see{" "}
+            <a
+              href={ARAPAHOE_VSPC_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={countyLinkClass}
+            >
+              VSPC locations and hours
+              <span className="sr-only"> on the Arapahoe County website (opens in a new tab)</span>
+            </a>
+            .
+          </p>
+        </InfoPopover>
+      }
       icon={<MagnifyingGlassIcon className="size-6 text-blue-700" />}
     >
-      <p className="text-sm text-zinc-600">
-        Enter a precinct number to view the assigned VSPC and location details.
-      </p>
-      <p className="mt-2 text-sm text-zinc-600">
-        Don&apos;t know your precinct number?{" "}
-        <a
-          href={ARAPAHOE_VOTER_LOOKUP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-blue-700 underline decoration-blue-400 underline-offset-2 hover:text-blue-900"
-        >
-          Look it up with the county registered voter search
-          <span className="sr-only"> (opens in a new tab)</span>
-        </a>
-        .
-      </p>
-
       <form
-        className="mt-4 flex flex-row items-end gap-3"
+        className="flex flex-row items-end gap-3"
         onSubmit={(event) => {
           event.preventDefault();
           setQuery(inputValue);
         }}
       >
         <div className="min-w-0 flex-1">
-          <label className="block text-sm font-medium text-zinc-800" htmlFor="precinct-number">
-            Precinct number
-          </label>
+          <div className="flex items-center gap-1.5">
+            <label className="text-sm font-medium text-zinc-800" htmlFor="precinct-number">
+              Precinct number
+            </label>
+            <InfoPopover label="Help finding your precinct">
+              <p>
+                Don&apos;t know your precinct number?{" "}
+                <a
+                  href={ARAPAHOE_VOTER_LOOKUP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={countyLinkClass}
+                >
+                  Look it up with the county registered voter search
+                  <span className="sr-only"> (opens in a new tab)</span>
+                </a>
+                .
+              </p>
+            </InfoPopover>
+          </div>
           <input
             id="precinct-number"
             inputMode="numeric"

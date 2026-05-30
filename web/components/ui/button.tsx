@@ -67,10 +67,12 @@ export function ButtonLink({
 
 export function PageSection({
   title,
+  titleAccessory,
   icon,
   children,
 }: {
   title: string;
+  titleAccessory?: ReactNode;
   icon?: ReactNode;
   children: ReactNode;
 }) {
@@ -79,6 +81,7 @@ export function PageSection({
       <div className="flex items-center gap-2">
         {icon}
         <h2 className="text-lg font-semibold tracking-tight text-zinc-900">{title}</h2>
+        {titleAccessory}
       </div>
       <div className="mt-4">{children}</div>
     </section>
