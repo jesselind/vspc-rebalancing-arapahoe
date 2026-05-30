@@ -12,6 +12,7 @@ export function PdfViewer() {
         <ButtonLink href={MAP_PDF_URL} target="_blank" rel="noopener noreferrer" variant="secondary">
           <ArrowTopRightOnSquareIcon className="size-4" />
           Open county map (PDF)
+          <span className="sr-only"> (opens in a new tab)</span>
         </ButtonLink>
       </div>
     </PageSection>

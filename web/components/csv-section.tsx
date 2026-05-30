@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { ArrowDownTrayIcon, DocumentIcon } from "@/components/icons";
 import { Button, ButtonLink, PageSection } from "@/components/ui/button";
 import type { CsvDataset } from "@/lib/types";
@@ -9,8 +9,17 @@ type Props = {
   datasets: CsvDataset[];
 };
 
+function tabId(datasetId: string) {
+  return `report-tab-${datasetId}`;
+}
+
+function panelId(datasetId: string) {
+  return `report-panel-${datasetId}`;
+}
+
 export function CsvSection({ datasets }: Props) {
   const [activeId, setActiveId] = useState(datasets[0]?.id ?? "");
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const activeDataset = useMemo(
     () => datasets.find((dataset) => dataset.id === activeId) ?? datasets[0],
     [activeId, datasets],
@@ -20,24 +29,74 @@ export function CsvSection({ datasets }: Props) {
     return null;
   }
 
+  function focusTab(index: number) {
+    tabRefs.current[index]?.focus();
+  }
+
+  function selectTab(index: number) {
+    const dataset = datasets[index];
+    if (!dataset) {
+      return;
+    }
+    setActiveId(dataset.id);
+    focusTab(index);
+  }
+
+  function onTabKeyDown(event: KeyboardEvent<HTMLButtonElement>, index: number) {
+    let nextIndex: number | null = null;
+
+    switch (event.key) {
+      case "ArrowRight":
+        nextIndex = (index + 1) % datasets.length;
+        break;
+      case "ArrowLeft":
+        nextIndex = (index - 1 + datasets.length) % datasets.length;
+        break;
+      case "Home":
+        nextIndex = 0;
+        break;
+      case "End":
+        nextIndex = datasets.length - 1;
+        break;
+      default:
+        return;
+    }
+
+    event.preventDefault();
+    selectTab(nextIndex);
+  }
+
   return (
     <PageSection title="Reports" icon={<DocumentIcon className="size-6 text-blue-700" />}>
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap" role="tablist" aria-label="Report datasets">
-        {datasets.map((dataset) => (
+        {datasets.map((dataset, index) => (
           <Button
             key={dataset.id}
+            ref={(element) => {
+              tabRefs.current[index] = element;
+            }}
+            id={tabId(dataset.id)}
             type="button"
             variant={dataset.id === activeDataset.id ? "tabActive" : "tab"}
             onClick={() => setActiveId(dataset.id)}
             role="tab"
             aria-selected={dataset.id === activeDataset.id}
+            aria-controls={panelId(dataset.id)}
+            tabIndex={dataset.id === activeDataset.id ? 0 : -1}
+            onKeyDown={(event) => onTabKeyDown(event, index)}
           >
             {dataset.label}
           </Button>
         ))}
       </div>
 
-      <div className="mt-4 max-h-[32rem] overflow-auto overscroll-contain rounded-lg border border-zinc-200 bg-zinc-50">
+      <div
+        role="tabpanel"
+        id={panelId(activeDataset.id)}
+        aria-labelledby={tabId(activeDataset.id)}
+        tabIndex={0}
+        className="mt-4 max-h-[32rem] overflow-auto overscroll-contain rounded-lg border border-zinc-200 bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500"
+      >
         <table className="min-w-full border-separate border-spacing-0">
           <thead>
             <tr>

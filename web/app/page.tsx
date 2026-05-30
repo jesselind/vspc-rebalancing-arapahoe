@@ -18,7 +18,7 @@ export default async function Home() {
   if (!homeData) {
     return (
       <div className="min-h-screen bg-zinc-100 p-6">
-        <main className="mx-auto max-w-3xl rounded-xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
+        <main id="main-content" className="mx-auto max-w-3xl rounded-xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
           <h1 className="text-2xl font-semibold text-amber-950">Data not prepared yet</h1>
           <p className="mt-2 text-sm text-amber-900">
             The server could not load CSV data from the deployed bundle. For local dev, run{" "}
@@ -43,7 +43,7 @@ export default async function Home() {
           </div>
         </header>
 
-        <main className="flex-1 px-4 py-6 md:px-6">
+        <main id="main-content" className="flex-1 px-4 py-6 md:px-6">
           <div className="mx-auto w-full max-w-7xl">
             <PrecinctLookup assignments={assignments} />
             <CsvSection datasets={datasets} />

@@ -6,6 +6,7 @@ import {
   useLayoutEffect,
   useRef,
   useState,
+  useSyncExternalStore,
   type CSSProperties,
   type ReactNode,
 } from "react";
@@ -20,6 +21,20 @@ type Props = {
 const VIEWPORT_MARGIN = 12;
 const GAP = 8;
 
+function getFocusableElement(container: HTMLElement): HTMLElement | null {
+  return container.querySelector<HTMLElement>(
+    'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+  );
+}
+
+function useCanPortal() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
+}
+
 export function InfoPopover({ label, children }: Props) {
   const panelId = useId();
   const [open, setOpen] = useState(false);
@@ -27,6 +42,8 @@ export function InfoPopover({ label, children }: Props) {
   const containerRef = useRef<HTMLSpanElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  const wasOpenRef = useRef(false);
+  const canPortal = useCanPortal();
 
   useLayoutEffect(() => {
     if (!open) {
@@ -68,12 +85,36 @@ export function InfoPopover({ label, children }: Props) {
     };
   }, [open, children]);
 
+  useLayoutEffect(() => {
+    if (!open) {
+      return;
+    }
+
+    const panel = panelRef.current;
+    if (!panel) {
+      return;
+    }
+
+    const focusTarget = getFocusableElement(panel) ?? panel;
+    if (focusTarget === panel) {
+      panel.tabIndex = -1;
+    }
+    focusTarget.focus();
+  }, [open, coords]);
+
+  useEffect(() => {
+    if (wasOpenRef.current && !open) {
+      buttonRef.current?.focus();
+    }
+    wasOpenRef.current = open;
+  }, [open]);
+
   useEffect(() => {
     if (!open) {
       return;
     }
 
-    function closeOnPointerDown(event: MouseEvent) {
+    function closeOnPointerDown(event: PointerEvent) {
       const target = event.target as Node;
       if (containerRef.current?.contains(target) || panelRef.current?.contains(target)) {
         return;
@@ -83,14 +124,15 @@ export function InfoPopover({ label, children }: Props) {
 
     function closeOnEscape(event: KeyboardEvent) {
       if (event.key === "Escape") {
+        event.preventDefault();
         setOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", closeOnPointerDown);
+    document.addEventListener("pointerdown", closeOnPointerDown);
     document.addEventListener("keydown", closeOnEscape);
     return () => {
-      document.removeEventListener("mousedown", closeOnPointerDown);
+      document.removeEventListener("pointerdown", closeOnPointerDown);
       document.removeEventListener("keydown", closeOnEscape);
     };
   }, [open]);
@@ -108,20 +150,26 @@ export function InfoPopover({ label, children }: Props) {
         className="inline-flex shrink-0 rounded-full text-blue-700 hover:text-blue-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
         aria-label={label}
         aria-expanded={open}
-        aria-controls={panelId}
+        aria-controls={canPortal ? panelId : undefined}
         onClick={() => setOpen((value) => !value)}
       >
         <InformationCircleIcon className="size-5" />
       </button>
 
-      {open &&
+      {canPortal &&
         createPortal(
           <div
             ref={panelRef}
             id={panelId}
-            role="tooltip"
+            role="dialog"
+            aria-modal="false"
+            aria-label={label}
+            aria-hidden={!open}
+            inert={!open ? true : undefined}
             style={panelStyle}
-            className="fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-lg border border-zinc-200 bg-white p-3 text-sm leading-relaxed text-zinc-700 shadow-lg"
+            className={`fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-lg border border-zinc-200 bg-white p-3 text-sm leading-relaxed text-zinc-700 shadow-lg ${
+              open ? "" : "pointer-events-none"
+            }`}
           >
             {children}
           </div>,

@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import { forwardRef, type ButtonHTMLAttributes, type ReactNode } from "react";
 
 type Variant = "primary" | "secondary" | "tab" | "tabActive";
 
@@ -19,19 +19,21 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
 };
 
-export function Button({
-  variant = "primary",
-  className = "",
-  type = "button",
-  children,
-  ...props
-}: ButtonProps) {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  { variant = "primary", className = "", type = "button", children, ...props },
+  ref,
+) {
   return (
-    <button type={type} className={`${baseClasses} ${variantClasses[variant]} ${className}`} {...props}>
+    <button
+      ref={ref}
+      type={type}
+      className={`${baseClasses} ${variantClasses[variant]} ${className}`}
+      {...props}
+    >
       {children}
     </button>
   );
-}
+});
 
 type ButtonLinkProps = {
   href: string;

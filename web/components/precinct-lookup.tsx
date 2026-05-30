@@ -90,7 +90,7 @@ export function PrecinctLookup({ assignments }: Props) {
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
             placeholder="Example: 101"
-            className="mt-2 h-11 w-full rounded-lg border border-zinc-300 bg-white px-3 text-sm text-zinc-900 shadow-sm outline-none transition-colors placeholder:text-zinc-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-200"
+            className="mt-2 h-11 w-full rounded-lg border border-zinc-300 bg-white px-3 text-base text-zinc-900 shadow-sm outline-none transition-colors placeholder:text-zinc-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-200"
           />
         </div>
         {canClear && (
@@ -111,12 +111,19 @@ export function PrecinctLookup({ assignments }: Props) {
       </form>
 
       {hasSubmitted && !match && (
-        <p className="mt-4 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+        <p
+          role="alert"
+          className="mt-4 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900"
+        >
           No assignment found for precinct &ldquo;{normalized}&rdquo;.
         </p>
       )}
 
-      {match && <AssignmentResult assignment={match} />}
+      {match && (
+        <div role="status">
+          <AssignmentResult assignment={match} />
+        </div>
+      )}
     </PageSection>
   );
 }
@@ -133,7 +140,7 @@ function AssignmentResult({ assignment }: { assignment: PrecinctAssignment }) {
           href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-flex items-start gap-1.5 text-sm font-medium text-blue-800 underline decoration-blue-400 underline-offset-2 hover:text-blue-950"
+          className={`mt-2 inline-flex items-start gap-1.5 ${countyLinkClass}`}
         >
           <MapPinIcon className="mt-0.5 size-4 shrink-0" />
           <span>
