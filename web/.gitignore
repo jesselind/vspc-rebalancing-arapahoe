@@ -18,6 +18,10 @@
 # next.js
 /.next/
 /out/
+.open-next/
+
+# cloudflare local
+.dev.vars
 
 # production
 /build
