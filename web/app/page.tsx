@@ -43,13 +43,15 @@ export default async function Home() {
           </div>
         </header>
 
-        <main className="mx-auto w-full max-w-7xl flex-1 px-3 py-6 sm:px-4 md:px-6">
-          <PrecinctLookup assignments={assignments} />
-          <CsvSection datasets={datasets} />
-          <PdfViewer />
+        <main className="flex-1 px-4 py-6 md:px-6">
+          <div className="mx-auto w-full max-w-7xl">
+            <PrecinctLookup assignments={assignments} />
+            <CsvSection datasets={datasets} />
+            <PdfViewer />
+          </div>
         </main>
 
-        <footer className="bg-zinc-50 px-3 py-5 sm:px-4 md:px-6">
+        <footer className="bg-zinc-50 px-4 py-5 md:px-6">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-3 text-center">
             <p className="text-sm text-zinc-600">Questions or incorrect data?</p>
             <FeedbackButton />

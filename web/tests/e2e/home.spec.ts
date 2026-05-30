@@ -6,12 +6,28 @@ test("loads homepage and precinct lookup", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Voter Service Polling Center (VSPC) Lookup" }),
   ).toBeVisible();
+  const voterLookupLink = page.getByRole("link", {
+    name: /Look it up with the county registered voter search/i,
+  });
+  await expect(voterLookupLink).toHaveAttribute("href", "https://arapahoevoterlookup.arapahoegov.com/");
+  await expect(voterLookupLink).toHaveAttribute("target", "_blank");
   await page.getByLabel("Precinct number").fill("101");
   await page.getByRole("button", { name: "Find VSPC" }).click();
   await expect(page.getByText(/Distance to assigned VSPC:/)).toBeVisible();
   await expect(page.getByText("City of Sheridan Municipal Building").first()).toBeVisible();
   const mapsLink = page.getByRole("link", { name: /4101 S Federal Blvd/i });
   await expect(mapsLink).toHaveAttribute("href", /google\.com\/maps/);
+});
+
+test("precinct lookup clear resets field and results", async ({ page }) => {
+  await page.goto("/");
+  await page.getByLabel("Precinct number").fill("101");
+  await page.getByRole("button", { name: "Find VSPC" }).click();
+  await expect(page.getByText(/Distance to assigned VSPC:/)).toBeVisible();
+
+  await page.getByRole("button", { name: "Clear precinct and start over" }).click();
+  await expect(page.getByLabel("Precinct number")).toHaveValue("");
+  await expect(page.getByText(/Distance to assigned VSPC:/)).not.toBeVisible();
 });
 
 test("precinct lookup submits on Enter key", async ({ page }) => {

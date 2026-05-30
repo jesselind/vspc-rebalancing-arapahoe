@@ -9,6 +9,7 @@ import {
   type CSSProperties,
   type ReactNode,
 } from "react";
+import { createPortal } from "react-dom";
 import { InformationCircleIcon } from "@/components/icons";
 
 type Props = {
@@ -111,17 +112,19 @@ export function InfoPopover({ label, children }: Props) {
         <InformationCircleIcon className="size-5" />
       </button>
 
-      {open && (
-        <div
-          ref={panelRef}
-          id={panelId}
-          role="tooltip"
-          style={panelStyle}
-          className="fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-lg border border-zinc-200 bg-white p-3 text-sm leading-relaxed text-zinc-700 shadow-lg"
-        >
-          {children}
-        </div>
-      )}
+      {open &&
+        createPortal(
+          <div
+            ref={panelRef}
+            id={panelId}
+            role="tooltip"
+            style={panelStyle}
+            className="fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-lg border border-zinc-200 bg-white p-3 text-sm leading-relaxed text-zinc-700 shadow-lg"
+          >
+            {children}
+          </div>,
+          document.body,
+        )}
     </span>
   );
 }
