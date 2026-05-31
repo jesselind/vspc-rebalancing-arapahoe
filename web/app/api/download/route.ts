@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 import { csvFileContents } from "@/lib/generated/home-data";
 import { ALLOWED_CSV_FILES } from "@/lib/downloads";
-import { clientIp, enforceRateLimit, rateLimitHeaders } from "@/lib/rate-limit";
+import { clientIp, enforceRateLimit, rateLimitHeaders, rateLimitSettings } from "@/lib/rate-limit";
 
 export async function GET(request: Request) {
-  const limit = Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "30");
+  const { limit } = rateLimitSettings("download");
   const rate = await enforceRateLimit("download", request);
   if (!rate.allowed) {
     return NextResponse.json(

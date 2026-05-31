@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import { FEEDBACK_EMAIL, FEEDBACK_MAILTO } from "@/lib/feedback";
-import { enforceRateLimit, rateLimitHeaders } from "@/lib/rate-limit";
+import { enforceRateLimit, rateLimitHeaders, rateLimitSettings } from "@/lib/rate-limit";
 
 export async function GET(request: Request) {
-  const limit = Number(process.env.RATE_LIMIT_FEEDBACK_MAX ?? "8");
+  const { limit } = rateLimitSettings("feedback");
   const rate = await enforceRateLimit("feedback", request);
   if (!rate.allowed) {
     return NextResponse.json(

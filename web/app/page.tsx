@@ -2,7 +2,11 @@ import { CsvSection } from "@/components/csv-section";
 import { FeedbackButton } from "@/components/feedback-button";
 import { PdfViewer } from "@/components/pdf-viewer";
 import { PrecinctLookup } from "@/components/precinct-lookup";
+import { ButtonLink } from "@/components/ui/button";
 import { loadDatasets, loadPrecinctAssignments } from "@/lib/data";
+import { PROJECT_REPO_URL } from "@/lib/project-repo";
+
+const GITHUB_ICON_SRC = "/GitHub_Invertocat_Black.svg";
 
 async function loadHomeData() {
   try {
@@ -53,6 +57,12 @@ export default async function Home() {
 
         <footer className="bg-zinc-50 px-4 py-5 md:px-6">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
+            <p className="text-sm text-zinc-600">Open source. Fork and adapt the rebalancing tools for your county.</p>
+            <ButtonLink href={PROJECT_REPO_URL} target="_blank" rel="noopener noreferrer" variant="secondary">
+              <img src={GITHUB_ICON_SRC} alt="" width={16} height={16} className="size-4 shrink-0" />
+              View project on GitHub
+              <span className="sr-only"> (opens in a new tab)</span>
+            </ButtonLink>
             <p className="text-sm text-zinc-600">Questions or incorrect data?</p>
             <FeedbackButton />
           </div>

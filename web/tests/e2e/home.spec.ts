@@ -52,10 +52,22 @@ test("renders csv tabs and download links", async ({ page }) => {
   );
 });
 
-test("links to county map PDF on GitHub", async ({ page }) => {
+test("links to county map PDF", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "County map (PDF)" })).toBeVisible();
-  const mapLink = page.getByRole("link", { name: "Open county map (PDF)" });
-  await expect(mapLink).toHaveAttribute("href", /raw\.githubusercontent\.com/);
-  await expect(mapLink).toHaveAttribute("target", "_blank");
+
+  const openLink = page.getByRole("link", { name: "Open county map (PDF)" });
+  await expect(openLink).toHaveAttribute("href", "/api/map-pdf");
+  await expect(openLink).toHaveAttribute("target", "_blank");
+
+  const downloadLink = page.getByRole("link", { name: "Download county map (PDF)" });
+  await expect(downloadLink).toHaveAttribute("href", "/api/map-pdf?disposition=attachment");
+  await expect(downloadLink).toHaveAttribute("download", "full-county-1_50000.pdf");
+});
+
+test("links to open-source repository in footer", async ({ page }) => {
+  await page.goto("/");
+  const footerRepoLink = page.getByRole("contentinfo").getByRole("link", { name: "View project on GitHub" });
+  await expect(footerRepoLink).toHaveAttribute("href", "https://github.com/jesselind/vspc-rebalancing-arapahoe");
+  await expect(footerRepoLink).toHaveAttribute("target", "_blank");
 });

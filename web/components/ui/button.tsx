@@ -40,7 +40,7 @@ type ButtonLinkProps = {
   variant?: Variant;
   className?: string;
   children: ReactNode;
-  download?: boolean;
+  download?: boolean | string;
   target?: string;
   rel?: string;
 };

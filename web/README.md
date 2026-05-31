@@ -52,12 +52,14 @@ npm run test:e2e
 - App is read-only in MVP
 - Baseline security headers are set in `next.config.ts` (add CSP in Cloudflare when ready)
 - CSV/PDF files live under `content/` (not `public/`); direct `/data/` and `/maps/` URLs return 404
-- Downloads and contact email use edge rate limits (`/api/download`, `/api/feedback`); tune with env:
-  - `RATE_LIMIT_WINDOW_SECONDS` (default `60`)
-  - `RATE_LIMIT_DOWNLOAD_MAX` (default `30`)
-  - `RATE_LIMIT_FEEDBACK_MAX` (default `8`)
-- On Cloudflare, add WAF rate limiting on `/api/download` and `/api/feedback` as defense in depth
-- County map PDF opens from GitHub (`lib/map-pdf-url.ts`), not through the Worker
+- Downloads, map PDF, and contact email use edge rate limits (per IP); tune with env:
+  - `RATE_LIMIT_WINDOW_SECONDS` (default `60`) — CSV download window
+  - `RATE_LIMIT_DOWNLOAD_MAX` (default `10`) — CSV downloads per IP per window
+  - `RATE_LIMIT_MAP_PDF_WINDOW_SECONDS` (default `60`) — map PDF window
+  - `RATE_LIMIT_MAP_PDF_MAX` (default `2`) — map PDF open/download combined per IP per window
+  - `RATE_LIMIT_FEEDBACK_MAX` (default `1`) — feedback requests per IP per window
+- On Cloudflare, add WAF rate limiting on `/api/download`, `/api/map-pdf`, and `/api/feedback` as defense in depth
+- County map PDF is proxied from GitHub via `/api/map-pdf` (inline view and download; avoids bundling the file in the Worker)
 - Do not commit `.dev.vars` or API tokens; set runtime env in the dashboard only if needed
 
 ## Deploy on Cloudflare Workers

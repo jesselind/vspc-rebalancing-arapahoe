@@ -11,13 +11,29 @@ type WindowState = {
 
 const memoryWindows = new Map<string, WindowState>();
 
+export type RateLimitBucket = "download" | "mapPdf" | "feedback";
+
 function getLimits() {
   const windowSec = Number(process.env.RATE_LIMIT_WINDOW_SECONDS ?? "60");
+  const mapPdfWindowSec = Number(process.env.RATE_LIMIT_MAP_PDF_WINDOW_SECONDS ?? "60");
   return {
     windowSec: Number.isFinite(windowSec) && windowSec > 0 ? windowSec : 60,
-    downloadMax: Math.max(1, Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "30")),
-    feedbackMax: Math.max(1, Number(process.env.RATE_LIMIT_FEEDBACK_MAX ?? "8")),
+    downloadMax: Math.max(1, Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "10")),
+    mapPdfWindowSec: Number.isFinite(mapPdfWindowSec) && mapPdfWindowSec > 0 ? mapPdfWindowSec : 60,
+    mapPdfMax: Math.max(1, Number(process.env.RATE_LIMIT_MAP_PDF_MAX ?? "2")),
+    feedbackMax: Math.max(1, Number(process.env.RATE_LIMIT_FEEDBACK_MAX ?? "1")),
   };
+}
+
+export function rateLimitSettings(bucket: RateLimitBucket): { limit: number; windowSec: number } {
+  const limits = getLimits();
+  if (bucket === "mapPdf") {
+    return { limit: limits.mapPdfMax, windowSec: limits.mapPdfWindowSec };
+  }
+  if (bucket === "download") {
+    return { limit: limits.downloadMax, windowSec: limits.windowSec };
+  }
+  return { limit: limits.feedbackMax, windowSec: limits.windowSec };
 }
 
 function checkMemoryWindow(key: string, limit: number, windowSec: number): RateLimitResult {
@@ -116,11 +132,10 @@ export function clientIp(request: Request): string {
 }
 
 export async function enforceRateLimit(
-  bucket: "download" | "feedback",
+  bucket: RateLimitBucket,
   request: Request,
 ): Promise<RateLimitResult> {
-  const { windowSec, downloadMax, feedbackMax } = getLimits();
-  const limit = bucket === "download" ? downloadMax : feedbackMax;
+  const { limit, windowSec } = rateLimitSettings(bucket);
   const key = `${bucket}:${clientIp(request)}`;
 
   const cacheResult = await checkCacheWindow(key, limit, windowSec);

@@ -5,7 +5,7 @@ import { isProbePath } from "@/lib/security-paths";
 /** Block legacy direct static paths; assets are served only via rate-limited API routes. */
 const BLOCKED_PREFIXES = ["/data/", "/maps/"];
 
-const GET_ONLY_API_PATHS = new Set(["/api/download", "/api/feedback"]);
+const GET_ONLY_API_PATHS = new Set(["/api/download", "/api/feedback", "/api/map-pdf"]);
 
 function notFoundResponse() {
   return NextResponse.json({ error: "Not found." }, { status: 404 });
