@@ -30,15 +30,23 @@ export const RATE_LIMITED_RESPONSE_CACHE_HEADERS = {
 
 export type RateLimitBucket = "download" | "mapPdf" | "feedback";
 
+function parsePositiveLimit(raw: string | undefined, fallback: number): number {
+  const parsed = Number(raw ?? String(fallback));
+  if (!Number.isFinite(parsed) || parsed <= 0) {
+    return fallback;
+  }
+  return Math.max(1, parsed);
+}
+
 function getLimits() {
   const windowSec = Number(process.env.RATE_LIMIT_WINDOW_SECONDS ?? "60");
   const mapPdfWindowSec = Number(process.env.RATE_LIMIT_MAP_PDF_WINDOW_SECONDS ?? "60");
   return {
     windowSec: Number.isFinite(windowSec) && windowSec > 0 ? windowSec : 60,
-    downloadMax: Math.max(1, Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "30")),
+    downloadMax: parsePositiveLimit(process.env.RATE_LIMIT_DOWNLOAD_MAX, 30),
     mapPdfWindowSec: Number.isFinite(mapPdfWindowSec) && mapPdfWindowSec > 0 ? mapPdfWindowSec : 60,
-    mapPdfMax: Math.max(1, Number(process.env.RATE_LIMIT_MAP_PDF_MAX ?? "30")),
-    feedbackMax: Math.max(1, Number(process.env.RATE_LIMIT_FEEDBACK_MAX ?? "5")),
+    mapPdfMax: parsePositiveLimit(process.env.RATE_LIMIT_MAP_PDF_MAX, 30),
+    feedbackMax: parsePositiveLimit(process.env.RATE_LIMIT_FEEDBACK_MAX, 5),
   };
 }
 
@@ -92,13 +100,17 @@ async function isCacheCounterReliable(cache: Cache): Promise<boolean> {
   }
 
   const probeKey = new Request("https://cei-rate-limit.local/__probe__");
-  await cache.put(
-    probeKey,
-    new Response("1", {
-      headers: { "Cache-Control": "max-age=60", "Content-Type": "text/plain" },
-    }),
-  );
-  cacheCounterReliable = (await cache.match(probeKey)) !== null;
+  try {
+    await cache.put(
+      probeKey,
+      new Response("1", {
+        headers: { "Cache-Control": "max-age=60", "Content-Type": "text/plain" },
+      }),
+    );
+    cacheCounterReliable = (await cache.match(probeKey)) !== null;
+  } catch {
+    cacheCounterReliable = false;
+  }
   return cacheCounterReliable;
 }
 

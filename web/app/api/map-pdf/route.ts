@@ -26,15 +26,19 @@ async function loadPdfBytes(): Promise<ArrayBuffer | null> {
 
   const bytes = await upstream.arrayBuffer();
   if (cache) {
-    await cache.put(
-      PDF_BYTES_CACHE_KEY,
-      new Response(bytes, {
-        headers: {
-          "Cache-Control": `max-age=${STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS}`,
-          "Content-Type": "application/pdf",
-        },
-      }),
-    );
+    try {
+      await cache.put(
+        PDF_BYTES_CACHE_KEY,
+        new Response(bytes, {
+          headers: {
+            "Cache-Control": `max-age=${STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS}`,
+            "Content-Type": "application/pdf",
+          },
+        }),
+      );
+    } catch (error) {
+      console.warn("Map PDF cache.put failed:", error);
+    }
   }
   return bytes;
 }
