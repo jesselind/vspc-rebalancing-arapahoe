@@ -3,6 +3,7 @@ import { MAP_PDF_FILENAME, MAP_PDF_SOURCE_URL } from "@/lib/map-pdf-url";
 import {
   clientIp,
   enforceRateLimit,
+  getWorkersDefaultCache,
   rateLimitHeaders,
   rateLimitSettings,
   STATIC_PUBLIC_CACHE_HEADERS,
@@ -12,7 +13,7 @@ import {
 const PDF_BYTES_CACHE_KEY = new Request("https://cei-asset-cache.local/map-pdf");
 
 async function loadPdfBytes(): Promise<ArrayBuffer | null> {
-  const cache = (globalThis.caches as CacheStorage | undefined)?.default;
+  const cache = getWorkersDefaultCache();
   const cached = cache ? await cache.match(PDF_BYTES_CACHE_KEY) : null;
   if (cached) {
     return cached.arrayBuffer();

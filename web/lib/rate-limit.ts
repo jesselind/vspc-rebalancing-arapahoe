@@ -79,6 +79,11 @@ function checkMemoryWindow(key: string, limit: number, windowSec: number): RateL
   };
 }
 
+/** Cloudflare Workers expose `caches.default`; DOM typings omit it. */
+export function getWorkersDefaultCache(): Cache | undefined {
+  return (globalThis.caches as (CacheStorage & { default?: Cache }) | undefined)?.default;
+}
+
 let cacheCounterReliable: boolean | null = null;
 
 async function isCacheCounterReliable(cache: Cache): Promise<boolean> {
@@ -102,8 +107,7 @@ async function checkCacheWindow(
   limit: number,
   windowSec: number,
 ): Promise<RateLimitResult | null> {
-  const cacheStorage = globalThis.caches as (CacheStorage & { default?: Cache }) | undefined;
-  const cache = cacheStorage?.default;
+  const cache = getWorkersDefaultCache();
   if (!cache || !(await isCacheCounterReliable(cache))) {
     return null;
   }
