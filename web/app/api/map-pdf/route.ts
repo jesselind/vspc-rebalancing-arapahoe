@@ -1,6 +1,42 @@
 import { NextResponse } from "next/server";
 import { MAP_PDF_FILENAME, MAP_PDF_SOURCE_URL } from "@/lib/map-pdf-url";
-import { clientIp, enforceRateLimit, rateLimitHeaders, rateLimitSettings } from "@/lib/rate-limit";
+import {
+  clientIp,
+  enforceRateLimit,
+  rateLimitHeaders,
+  rateLimitSettings,
+  STATIC_PUBLIC_CACHE_HEADERS,
+  STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS,
+} from "@/lib/rate-limit";
+
+const PDF_BYTES_CACHE_KEY = new Request("https://cei-asset-cache.local/map-pdf");
+
+async function loadPdfBytes(): Promise<ArrayBuffer | null> {
+  const cache = (globalThis.caches as CacheStorage | undefined)?.default;
+  const cached = cache ? await cache.match(PDF_BYTES_CACHE_KEY) : null;
+  if (cached) {
+    return cached.arrayBuffer();
+  }
+
+  const upstream = await fetch(MAP_PDF_SOURCE_URL);
+  if (!upstream.ok) {
+    return null;
+  }
+
+  const bytes = await upstream.arrayBuffer();
+  if (cache) {
+    await cache.put(
+      PDF_BYTES_CACHE_KEY,
+      new Response(bytes, {
+        headers: {
+          "Cache-Control": `max-age=${STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS}`,
+          "Content-Type": "application/pdf",
+        },
+      }),
+    );
+  }
+  return bytes;
+}
 
 export async function GET(request: Request) {
   const { limit } = rateLimitSettings("mapPdf");
@@ -16,27 +52,25 @@ export async function GET(request: Request) {
   const asAttachment = url.searchParams.get("disposition") === "attachment";
 
   try {
-    const upstream = await fetch(MAP_PDF_SOURCE_URL);
-    if (!upstream.ok) {
+    const bytes = await loadPdfBytes();
+    if (!bytes) {
       return NextResponse.json({ error: "Map PDF unavailable." }, { status: 502 });
     }
 
     const headers = new Headers(rateLimitHeaders(rate, limit));
     headers.set("Content-Type", "application/pdf");
     headers.set("X-Content-Type-Options", "nosniff");
-    headers.set("Cache-Control", "public, max-age=3600");
+    for (const [header, value] of Object.entries(STATIC_PUBLIC_CACHE_HEADERS)) {
+      headers.set(header, value);
+    }
     if (asAttachment) {
       headers.set("Content-Disposition", `attachment; filename="${MAP_PDF_FILENAME.replace(/"/g, "")}"`);
     } else {
       headers.set("Content-Disposition", "inline");
     }
+    headers.set("Content-Length", String(bytes.byteLength));
 
-    const contentLength = upstream.headers.get("content-length");
-    if (contentLength) {
-      headers.set("Content-Length", contentLength);
-    }
-
-    return new NextResponse(upstream.body, { status: 200, headers });
+    return new NextResponse(bytes, { status: 200, headers });
   } catch {
     console.error(`Map PDF proxy failed (${clientIp(request)})`);
     return NextResponse.json({ error: "Map PDF unavailable." }, { status: 502 });

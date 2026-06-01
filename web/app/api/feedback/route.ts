@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { FEEDBACK_EMAIL, FEEDBACK_MAILTO } from "@/lib/feedback";
-import { enforceRateLimit, rateLimitHeaders, rateLimitSettings } from "@/lib/rate-limit";
+import {
+  enforceRateLimit,
+  RATE_LIMITED_RESPONSE_CACHE_HEADERS,
+  rateLimitHeaders,
+  rateLimitSettings,
+} from "@/lib/rate-limit";
 
 export async function GET(request: Request) {
   const { limit } = rateLimitSettings("feedback");
@@ -18,7 +23,7 @@ export async function GET(request: Request) {
       status: 200,
       headers: {
         ...rateLimitHeaders(rate, limit),
-        "Cache-Control": "private, no-store",
+        ...RATE_LIMITED_RESPONSE_CACHE_HEADERS,
       },
     },
   );
