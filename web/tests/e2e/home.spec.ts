@@ -52,15 +52,23 @@ test("renders csv tabs and download links", async ({ page }) => {
   );
 });
 
-test("links to county map PDF", async ({ page }) => {
+test("links to county and project map PDFs", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "County map (PDF)" })).toBeVisible();
 
-  const openLink = page.getByRole("link", { name: "Open county map (PDF)" });
+  const countyMapLink = page.getByRole("link", { name: "County precinct map (PDF)" });
+  await expect(countyMapLink).toHaveAttribute("href", /files\.arapahoeco\.gov\/.*48x24%20Precinct%20Map\.pdf/);
+  await expect(countyMapLink).toHaveAttribute("target", "_blank");
+
+  const precinctIndexLink = page.getByRole("link", { name: "Individual precinct maps" });
+  await expect(precinctIndexLink).toHaveAttribute("href", "https://gis.arapahoegov.com/ElectionPrecincts/");
+  await expect(precinctIndexLink).toHaveAttribute("target", "_blank");
+
+  const openLink = page.getByRole("link", { name: "Open rebalancing map (PDF)" });
   await expect(openLink).toHaveAttribute("href", "/api/map-pdf");
   await expect(openLink).toHaveAttribute("target", "_blank");
 
-  const downloadLink = page.getByRole("link", { name: "Download county map (PDF)" });
+  const downloadLink = page.getByRole("link", { name: "Download rebalancing map (PDF)" });
   await expect(downloadLink).toHaveAttribute("href", "/api/map-pdf?disposition=attachment");
   await expect(downloadLink).toHaveAttribute("download", "full-county-1_50000.pdf");
 });

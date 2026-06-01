@@ -11,17 +11,42 @@ type WindowState = {
 
 const memoryWindows = new Map<string, WindowState>();
 
+/**
+ * Per-IP caps on Worker invocations (cache misses). Limits abuse and $0-plan quota use;
+ * they are not meant to restrict normal repeat views once CDN/browser cache is warm.
+ */
+export const STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS = 3600;
+
+/** Edge/browser cache for static CSV/PDF; warm cache hits skip the Worker. */
+export const STATIC_PUBLIC_CACHE_HEADERS = {
+  "Cache-Control": `public, max-age=${STATIC_PUBLIC_CACHE_MAX_AGE_SECONDS}`,
+} as const;
+
+/** Feedback is dynamic and should not be cached at the edge. */
+export const RATE_LIMITED_RESPONSE_CACHE_HEADERS = {
+  "Cache-Control": "private, no-store, must-revalidate",
+  "CDN-Cache-Control": "no-store",
+} as const;
+
 export type RateLimitBucket = "download" | "mapPdf" | "feedback";
+
+function parsePositiveLimit(raw: string | undefined, fallback: number): number {
+  const parsed = Number(raw ?? String(fallback));
+  if (!Number.isFinite(parsed) || parsed <= 0) {
+    return fallback;
+  }
+  return Math.max(1, parsed);
+}
 
 function getLimits() {
   const windowSec = Number(process.env.RATE_LIMIT_WINDOW_SECONDS ?? "60");
   const mapPdfWindowSec = Number(process.env.RATE_LIMIT_MAP_PDF_WINDOW_SECONDS ?? "60");
   return {
     windowSec: Number.isFinite(windowSec) && windowSec > 0 ? windowSec : 60,
-    downloadMax: Math.max(1, Number(process.env.RATE_LIMIT_DOWNLOAD_MAX ?? "10")),
+    downloadMax: parsePositiveLimit(process.env.RATE_LIMIT_DOWNLOAD_MAX, 30),
     mapPdfWindowSec: Number.isFinite(mapPdfWindowSec) && mapPdfWindowSec > 0 ? mapPdfWindowSec : 60,
-    mapPdfMax: Math.max(1, Number(process.env.RATE_LIMIT_MAP_PDF_MAX ?? "2")),
-    feedbackMax: Math.max(1, Number(process.env.RATE_LIMIT_FEEDBACK_MAX ?? "1")),
+    mapPdfMax: parsePositiveLimit(process.env.RATE_LIMIT_MAP_PDF_MAX, 30),
+    feedbackMax: parsePositiveLimit(process.env.RATE_LIMIT_FEEDBACK_MAX, 5),
   };
 }
 
@@ -62,14 +87,40 @@ function checkMemoryWindow(key: string, limit: number, windowSec: number): RateL
   };
 }
 
+/** Cloudflare Workers expose `caches.default`; DOM typings omit it. */
+export function getWorkersDefaultCache(): Cache | undefined {
+  return (globalThis.caches as (CacheStorage & { default?: Cache }) | undefined)?.default;
+}
+
+let cacheCounterReliable: boolean | null = null;
+
+async function isCacheCounterReliable(cache: Cache): Promise<boolean> {
+  if (cacheCounterReliable !== null) {
+    return cacheCounterReliable;
+  }
+
+  const probeKey = new Request("https://cei-rate-limit.local/__probe__");
+  try {
+    await cache.put(
+      probeKey,
+      new Response("1", {
+        headers: { "Cache-Control": "max-age=60", "Content-Type": "text/plain" },
+      }),
+    );
+    cacheCounterReliable = (await cache.match(probeKey)) !== null;
+  } catch {
+    cacheCounterReliable = false;
+  }
+  return cacheCounterReliable;
+}
+
 async function checkCacheWindow(
   key: string,
   limit: number,
   windowSec: number,
 ): Promise<RateLimitResult | null> {
-  const cacheStorage = globalThis.caches as (CacheStorage & { default?: Cache }) | undefined;
-  const cache = cacheStorage?.default;
-  if (!cache) {
+  const cache = getWorkersDefaultCache();
+  if (!cache || !(await isCacheCounterReliable(cache))) {
     return null;
   }
 

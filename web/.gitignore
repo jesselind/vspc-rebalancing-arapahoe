@@ -22,6 +22,7 @@
 
 # cloudflare local
 .dev.vars
+/.wrangler/
 
 # built from content/data at prebuild
 /lib/generated/

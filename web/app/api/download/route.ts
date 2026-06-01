@@ -1,7 +1,13 @@
 import { NextResponse } from "next/server";
 import { csvFileContents } from "@/lib/generated/home-data";
 import { ALLOWED_CSV_FILES } from "@/lib/downloads";
-import { clientIp, enforceRateLimit, rateLimitHeaders, rateLimitSettings } from "@/lib/rate-limit";
+import {
+  clientIp,
+  enforceRateLimit,
+  rateLimitHeaders,
+  rateLimitSettings,
+  STATIC_PUBLIC_CACHE_HEADERS,
+} from "@/lib/rate-limit";
 
 export async function GET(request: Request) {
   const { limit } = rateLimitSettings("download");
@@ -30,7 +36,9 @@ export async function GET(request: Request) {
     const headers = new Headers(rateLimitHeaders(rate, limit));
     headers.set("Content-Type", "text/csv; charset=utf-8");
     headers.set("X-Content-Type-Options", "nosniff");
-    headers.set("Cache-Control", "private, no-store");
+    for (const [header, value] of Object.entries(STATIC_PUBLIC_CACHE_HEADERS)) {
+      headers.set(header, value);
+    }
     if (asAttachment) {
       headers.set("Content-Disposition", `attachment; filename="${file.replace(/"/g, "")}"`);
     } else {
