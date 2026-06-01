@@ -1,7 +1,18 @@
 .DS_Store
+
+# Secrets and local env (web/ also ignores these under web/.gitignore)
+.env*
+.dev.vars
+
 *.pyc
 __pycache__/
 *.csv.backup
 *.txt
 *.zip
 *.docx
+
+# Local planning/context docs for agent handoff
+LOCAL_*.md
+
+# Wrangler local dev cache (miniflare, etc.)
+.wrangler/
