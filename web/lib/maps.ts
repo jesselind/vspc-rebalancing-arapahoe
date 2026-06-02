@@ -1,4 +1,4 @@
-import { ASSIGNED_VSPC_HEADER } from "@/lib/csv-reports";
+import { ADDRESS_HEADER, ASSIGNED_VSPC_HEADER } from "@/lib/csv-reports";
 
 type AddressParts = {
   address: string;
@@ -21,7 +21,7 @@ export const googleMapsLinkClass =
   "font-medium text-blue-700 underline decoration-blue-400 underline-offset-2 hover:text-blue-900";
 
 export function vspcLocationMapsUrlFromRow(headers: string[], row: string[]): string | null {
-  const addressIndex = headers.indexOf("Address");
+  const addressIndex = headers.indexOf(ADDRESS_HEADER);
   if (addressIndex < 0) {
     return null;
   }

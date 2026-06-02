@@ -27,6 +27,18 @@ function isHttpUrl(value: string): boolean {
   }
 }
 
+function isPdfHttpUrl(value: string): boolean {
+  if (!isHttpUrl(value)) {
+    return false;
+  }
+  try {
+    const url = new URL(value);
+    return url.pathname.toLowerCase().endsWith(".pdf");
+  } catch {
+    return false;
+  }
+}
+
 type Props = {
   header: string;
   value: string;
@@ -104,9 +116,13 @@ export function CsvTableCell({
   }
 
   if (header === PRECINCT_MAP_URL_HEADER && trimmed && isHttpUrl(trimmed)) {
-    const label = precinct
-      ? `Open precinct ${precinct} map (PDF)`
-      : "Open precinct map (PDF)";
+    const isPdf = isPdfHttpUrl(trimmed);
+    const mapLabel = precinct
+      ? `Open precinct ${precinct} map${isPdf ? " (PDF)" : ""}`
+      : `Open precinct map${isPdf ? " (PDF)" : ""}`;
+    const mapTitle = precinct
+      ? `Precinct ${precinct} map${isPdf ? " (PDF)" : ""}`
+      : `Precinct map${isPdf ? " (PDF)" : ""}`;
 
     return (
       <a
@@ -114,8 +130,8 @@ export function CsvTableCell({
         target="_blank"
         rel="noopener noreferrer"
         className={mapLinkClass}
-        aria-label={`${label} (opens in a new tab)`}
-        title={precinct ? `Precinct ${precinct} map` : "Precinct map"}
+        aria-label={`${mapLabel} (opens in a new tab)`}
+        title={mapTitle}
       >
         <MapIcon className="size-4" />
       </a>
