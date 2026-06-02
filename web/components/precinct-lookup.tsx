@@ -5,7 +5,7 @@ import { InfoPopover } from "@/components/info-popover";
 import { MagnifyingGlassIcon, MapPinIcon, XMarkIcon } from "@/components/icons";
 import { Button, PageSection } from "@/components/ui/button";
 import { ARAPAHOE_VOTER_LOOKUP_URL, ARAPAHOE_VSPC_URL } from "@/lib/county-links";
-import { formatFullAddress, googleMapsSearchUrl } from "@/lib/maps";
+import { formatFullAddress, googleMapsLinkClass, googleMapsSearchUrl } from "@/lib/maps";
 import type { PrecinctAssignment } from "@/lib/types";
 
 const countyLinkClass =
@@ -140,7 +140,7 @@ function AssignmentResult({ assignment }: { assignment: PrecinctAssignment }) {
           href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className={`mt-2 inline-flex items-start gap-1.5 ${countyLinkClass}`}
+          className={`mt-2 inline-flex items-start gap-1.5 ${googleMapsLinkClass}`}
         >
           <MapPinIcon className="mt-0.5 size-4 shrink-0" />
           <span>

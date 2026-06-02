@@ -7,11 +7,18 @@ const eslintConfig = defineConfig([
   ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
-    // Default ignores of eslint-config-next:
+    // Next.js / OpenNext build output (see web/.gitignore)
     ".next/**",
+    ".open-next/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Prebuild codegen (web/tools/generate-home-data.mjs)
+    "lib/generated/**",
+    // Test artifacts
+    "coverage/**",
+    "playwright-report/**",
+    "test-results/**",
   ]),
 ]);
 
