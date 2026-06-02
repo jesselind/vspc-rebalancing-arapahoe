@@ -3,6 +3,10 @@
 import { useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { ArrowDownTrayIcon, DocumentIcon } from "@/components/icons";
 import { Button, ButtonLink, PageSection } from "@/components/ui/button";
+import { CsvTableCell } from "@/components/csv-table-cell";
+import { PRECINCT_MAP_URL_HEADER, VSPC_LOCATIONS_DATASET_ID } from "@/lib/csv-reports";
+import { formatCsvHeader } from "@/lib/format-csv-cell";
+import { buildVspcMapsLookup } from "@/lib/maps";
 import type { CsvDataset } from "@/lib/types";
 
 type Props = {
@@ -24,6 +28,21 @@ export function CsvSection({ datasets }: Props) {
     () => datasets.find((dataset) => dataset.id === activeId) ?? datasets[0],
     [activeId, datasets],
   );
+
+  const precinctColIndex = useMemo(() => {
+    if (!activeDataset) {
+      return -1;
+    }
+    return activeDataset.headers.indexOf("Precinct");
+  }, [activeDataset]);
+
+  const vspcMapsByName = useMemo(() => {
+    const locations = datasets.find((dataset) => dataset.id === VSPC_LOCATIONS_DATASET_ID);
+    if (!locations) {
+      return undefined;
+    }
+    return buildVspcMapsLookup(locations.headers, locations.rows);
+  }, [datasets]);
 
   if (!activeDataset) {
     return null;
@@ -107,10 +126,12 @@ export function CsvSection({ datasets }: Props) {
                   className={`sticky top-0 border-b border-zinc-200 bg-zinc-100 px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide text-zinc-700 ${
                     colIndex === 0
                       ? "left-0 z-40 min-w-[5.5rem] shadow-[4px_0_6px_-4px_rgba(0,0,0,0.12)]"
-                      : "z-20"
+                      : header === PRECINCT_MAP_URL_HEADER
+                        ? "z-20 w-16 text-center"
+                        : "z-20"
                   }`}
                 >
-                  {header}
+                  {formatCsvHeader(header)}
                 </th>
               ))}
             </tr>
@@ -118,7 +139,7 @@ export function CsvSection({ datasets }: Props) {
           <tbody>
             {activeDataset.rows.map((row, rowIndex) => (
               <tr key={`${activeDataset.id}-${rowIndex}`} className="odd:bg-white even:bg-zinc-50">
-                {activeDataset.headers.map((_, colIndex) => (
+                {activeDataset.headers.map((header, colIndex) => (
                   <td
                     key={`${activeDataset.id}-${rowIndex}-${colIndex}`}
                     className={`border-b border-zinc-100 px-3 py-2 text-sm text-zinc-800 ${
@@ -126,10 +147,20 @@ export function CsvSection({ datasets }: Props) {
                         ? `sticky left-0 z-10 min-w-[5.5rem] shadow-[4px_0_6px_-4px_rgba(0,0,0,0.08)] ${
                             rowIndex % 2 === 0 ? "bg-white" : "bg-zinc-50"
                           }`
-                        : ""
+                        : header === PRECINCT_MAP_URL_HEADER
+                          ? "text-center"
+                          : ""
                     }`}
                   >
-                    {row[colIndex] ?? ""}
+                    <CsvTableCell
+                      header={header}
+                      value={row[colIndex] ?? ""}
+                      precinct={precinctColIndex >= 0 ? row[precinctColIndex] : undefined}
+                      datasetId={activeDataset.id}
+                      headers={activeDataset.headers}
+                      row={row}
+                      vspcMapsByName={vspcMapsByName}
+                    />
                   </td>
                 ))}
               </tr>
