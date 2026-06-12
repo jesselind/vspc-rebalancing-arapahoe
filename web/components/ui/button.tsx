@@ -71,15 +71,19 @@ export function PageSection({
   title,
   titleAccessory,
   icon,
+  showDivider = true,
   children,
 }: {
   title: string;
   titleAccessory?: ReactNode;
   icon?: ReactNode;
+  showDivider?: boolean;
   children: ReactNode;
 }) {
   return (
-    <section className="mt-5 border-t border-zinc-200 pt-4 first:mt-0 first:border-t-0 first:pt-0">
+    <section
+      className={`mt-5 first:mt-0 ${showDivider ? "border-t border-zinc-200 pt-4 first:border-t-0 first:pt-0" : ""}`}
+    >
       <div className="flex items-center gap-2">
         {icon}
         <h2 className="text-lg font-semibold tracking-tight text-zinc-900">{title}</h2>

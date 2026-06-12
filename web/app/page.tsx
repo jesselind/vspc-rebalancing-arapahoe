@@ -2,6 +2,7 @@ import { CsvSection } from "@/components/csv-section";
 import { FeedbackButton } from "@/components/feedback-button";
 import { PdfViewer } from "@/components/pdf-viewer";
 import { PrecinctLookup } from "@/components/precinct-lookup";
+import { WhySection } from "@/components/why-section";
 import { ButtonLink } from "@/components/ui/button";
 import { loadDatasets, loadPrecinctAssignments } from "@/lib/data";
 import { PROJECT_REPO_URL } from "@/lib/project-repo";
@@ -50,6 +51,7 @@ export default async function Home() {
         <main id="main-content" className="flex-1 px-4 py-6 md:px-6">
           <div className="mx-auto w-full max-w-7xl">
             <PrecinctLookup assignments={assignments} />
+            <WhySection />
             <CsvSection datasets={datasets} />
             <PdfViewer />
           </div>
