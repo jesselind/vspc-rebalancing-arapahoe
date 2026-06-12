@@ -14,4 +14,7 @@ export type PrecinctAssignment = {
   state: string;
   zip: string;
   distanceMiles: string;
+  nearestVspc: string;
+  nearestDistanceMiles: string;
+  reassigned: boolean;
 };

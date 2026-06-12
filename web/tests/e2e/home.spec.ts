@@ -39,6 +39,15 @@ test("precinct lookup submits on Enter key", async ({ page }) => {
   await expect(page.getByText(/Distance to assigned VSPC:/)).toBeVisible();
 });
 
+test("precinct lookup explains reassigned VSPCs", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("textbox", { name: "Precinct number" }).fill("105");
+  await page.getByRole("button", { name: "Find VSPC" }).click();
+  await expect(page.getByText(/farther than the nearest one in this list/)).toBeVisible();
+  await expect(page.getByText(/Englewood Civic Center, 0\.56 miles away/)).toBeVisible();
+  await expect(page.getByText(/evenly distribute voters across the county/)).toBeVisible();
+});
+
 test("renders csv tabs and download links", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Reports" })).toBeVisible();

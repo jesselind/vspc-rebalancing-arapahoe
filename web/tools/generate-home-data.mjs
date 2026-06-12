@@ -98,12 +98,15 @@ async function loadPrecinctAssignments() {
   const index = Object.fromEntries(headers.map((header, i) => [header.trim(), i]));
   const requiredHeaders = [
     "Precinct",
+    "Nearest VSPC",
+    "Distance to Nearest VSPC (mi.)",
     "Assigned VSPC",
     "Address",
     "City",
     "State",
     "Zip",
     "Distance to Assigned VSPC (mi.)",
+    "Reassigned",
   ];
 
   for (const header of requiredHeaders) {
@@ -118,6 +121,7 @@ async function loadPrecinctAssignments() {
     if (!precinct) {
       continue;
     }
+    const reassignedRaw = (row[index["Reassigned"]] ?? "").trim().toLowerCase();
     assignments.push({
       precinct,
       assignedVspc: row[index["Assigned VSPC"]] ?? "",
@@ -126,6 +130,9 @@ async function loadPrecinctAssignments() {
       state: row[index["State"]] ?? "",
       zip: row[index["Zip"]] ?? "",
       distanceMiles: row[index["Distance to Assigned VSPC (mi.)"]] ?? "",
+      nearestVspc: row[index["Nearest VSPC"]] ?? "",
+      nearestDistanceMiles: row[index["Distance to Nearest VSPC (mi.)"]] ?? "",
+      reassigned: reassignedRaw === "true",
     });
   }
 

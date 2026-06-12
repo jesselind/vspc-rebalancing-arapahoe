@@ -159,6 +159,23 @@ function AssignmentResult({ assignment }: { assignment: PrecinctAssignment }) {
           The distance from the geographic center of your precinct to the VSPC location.
         </InfoPopover>
       </div>
+      {assignment.reassigned ? (
+        <p
+          role="note"
+          className="mt-3 rounded-md border border-amber-200 bg-amber-50 px-3 py-2.5 text-sm text-amber-950"
+        >
+          Your precinct was assigned to a VSPC farther than the nearest one in this list
+          {assignment.nearestVspc ? (
+            <>
+              {" "}
+              ({assignment.nearestVspc}
+              {assignment.nearestDistanceMiles ? `, ${assignment.nearestDistanceMiles} miles away` : ""})
+            </>
+          ) : null}
+          . This was intentional: rebalancing helps evenly distribute voters across the county&apos;s
+          limited number of county-approved VSPC locations.
+        </p>
+      ) : null}
     </div>
   );
 }
