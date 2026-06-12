@@ -4,7 +4,11 @@ import { useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { ArrowDownTrayIcon, DocumentIcon } from "@/components/icons";
 import { Button, ButtonLink, PageSection } from "@/components/ui/button";
 import { CsvTableCell } from "@/components/csv-table-cell";
-import { PRECINCT_MAP_URL_HEADER, VSPC_LOCATIONS_DATASET_ID } from "@/lib/csv-reports";
+import {
+  PRECINCT_MAP_URL_HEADER,
+  REPORT_DESCRIPTIONS,
+  VSPC_LOCATIONS_DATASET_ID,
+} from "@/lib/csv-reports";
 import { formatCsvHeader } from "@/lib/format-csv-cell";
 import { buildVspcMapsLookup } from "@/lib/maps";
 import type { CsvDataset } from "@/lib/types";
@@ -47,6 +51,9 @@ export function CsvSection({ datasets }: Props) {
   if (!activeDataset) {
     return null;
   }
+
+  const activeDescription = REPORT_DESCRIPTIONS[activeDataset.id];
+  const activeDescriptionId = `${panelId(activeDataset.id)}-description`;
 
   function focusTab(index: number) {
     tabRefs.current[index]?.focus();
@@ -109,12 +116,19 @@ export function CsvSection({ datasets }: Props) {
         ))}
       </div>
 
+      {activeDescription ? (
+        <p id={activeDescriptionId} className="mt-4 text-sm text-zinc-600">
+          {activeDescription}
+        </p>
+      ) : null}
+
       <div
         role="tabpanel"
         id={panelId(activeDataset.id)}
         aria-labelledby={tabId(activeDataset.id)}
+        aria-describedby={activeDescription ? activeDescriptionId : undefined}
         tabIndex={0}
-        className="mt-4 max-h-[32rem] overflow-auto overscroll-contain rounded-lg border border-zinc-200 bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500"
+        className="mt-3 max-h-[32rem] overflow-auto overscroll-contain rounded-lg border border-zinc-200 bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-500"
       >
         <table className="min-w-full border-separate border-spacing-0">
           <thead>
