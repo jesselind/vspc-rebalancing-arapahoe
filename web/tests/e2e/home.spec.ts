@@ -17,8 +17,11 @@ test("loads homepage and precinct lookup", async ({ page }) => {
   await page.getByRole("button", { name: "Find VSPC" }).click();
   await expect(page.getByText(/Distance to assigned VSPC:/)).toBeVisible();
   await expect(page.getByText("City of Sheridan Municipal Building").first()).toBeVisible();
-  const mapsLink = page.getByRole("link", { name: /4101 S Federal Blvd/i });
-  await expect(mapsLink).toHaveAttribute("href", /google\.com\/maps/);
+  const lookupResult = page.getByRole("status");
+  await expect(lookupResult.getByRole("link", { name: /4101 S Federal Blvd/i })).toHaveAttribute(
+    "href",
+    /google\.com\/maps/,
+  );
 });
 
 test("precinct lookup clear resets field and results", async ({ page }) => {
@@ -46,6 +49,12 @@ test("precinct lookup explains reassigned VSPCs", async ({ page }) => {
   await expect(page.getByText(/farther than the nearest one in this list/)).toBeVisible();
   await expect(page.getByText(/Englewood Civic Center, 0\.56 miles away/)).toBeVisible();
   await expect(page.getByText(/evenly distribute voters across the county/)).toBeVisible();
+});
+
+test("renders why section between lookup and reports", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "Why this matters" })).toBeVisible();
+  await expect(page.getByText(/citizens are building a backup plan/)).toBeVisible();
 });
 
 test("renders csv tabs and download links", async ({ page }) => {

@@ -93,7 +93,7 @@ export function CsvSection({ datasets }: Props) {
   }
 
   return (
-    <PageSection title="Reports" icon={<DocumentIcon className="size-6 text-blue-700" />}>
+    <PageSection title="Reports" icon={<DocumentIcon className="size-6 text-blue-700" />} showDivider={false}>
       <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap" role="tablist" aria-label="Report datasets">
         {datasets.map((dataset, index) => (
           <Button
